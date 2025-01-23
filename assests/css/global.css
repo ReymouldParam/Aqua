@@ -11,18 +11,39 @@ body{
   overflow-x: hidden;
 }
 
+
+/*animations*/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .purifier-gif {
+    width: 50%; /* Adjust initial size for smaller screens */
+    height: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .purifier-gif {
+    width: 70%; /* Further adjust size for smaller screens */
+    height: 70%;
+  }
+}
+
+
+
+
 /*navbar styling*/
 
 .navbar {
   background-image: linear-gradient(#90D7FE,#BAE6FF);
   padding: 0px 30px;
+  box-shadow:5px 5px 10px #90D7FE;
 }
 
-.navbar-brand .logo {
-  font-size: 40px;
-  font-weight: bold;
-  color: #328bc2;
-  margin-left: 100px;
+.navbar-brand .navbar-logo {
+  height: 50px; /* Adjust height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit:contain; 
+  margin-left:100px
 }
 
 .navbar-nav .nav-link {

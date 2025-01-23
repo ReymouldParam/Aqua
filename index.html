@@ -29,7 +29,7 @@
     <div class="container-fluid">
       <!-- Brand Logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="/assests/images/logo.png" class="img-fluid" alt="logo" width="50px" height="50px" style="margin-left:100px">
+        <img src="/assests/images/logo.png" class="img-fluid navbar-logo" alt="logo">
       </a>
       <!-- Toggler for Mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,9 +69,19 @@
         <p>Protect your family with<br> clean, safe, and healthy water,<br> free from<br> contaminants and impurities.</p>
       </div>
     </div>
-
+    <div class="vectors">
+      <div class="vector-1">
+        <img src="/assests/images/Vector 2.png" width="200px" height="100px">
+      </div>
+      <div class="vector-2">
+        <img src="/assests/images/Vector 3 (1).png" width="200px" height="100px">
+      </div>
+    </div>
     <div class="purifier-gif">
-      <img src="/assests/images/Comp 1 (1).mp4">
+      <video class="video-as-image" autoplay muted loop>
+        <source src="/assests/images/Comp 1 (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </div>
 
     <div class="purifier-carousel">
@@ -86,7 +96,7 @@
     <div class="main-page-cards">
       <div class="card card1">
         <div class="card-body">
-          <img src="/assests/images/main2.png" alt="purifier" class="img-fluid">
+          <img src="/assests/images/main2.png" alt="purifier" class="img-fluid" max-width="100%">
           <p>Charcoal Filter Stage</p>
         </div>
       </div>
@@ -310,7 +320,7 @@
   <div class="row align-items-center">
     <!-- Left Glass -->
     <div class="col-12 col-md-3 text-center">
-      <img src="/assests/images/left glass.png" alt="Left Glass" class="img-fluid water-glass">
+      <img src="/assests/images/left glass.png" alt="Left Glass" class="img-fluid water-glasses">
     </div>
     <!-- Center Section -->
     <div class="col-12 col-md-6 text-center">
@@ -336,14 +346,14 @@
     </div>
     <!-- Right Glass -->
     <div class="col-12 col-md-3 text-center">
-      <img src="/assests/images/rightclass.png" alt="Right Glass" class="img-fluid water-glass">
+      <img src="/assests/images/rightclass.png" alt="Right Glass" class="img-fluid water-glasses">
     </div>
   </div>
 </div>
 <!---end of product technology-->
 <!---our clients-->
 <div class="container-fluid client-section">
-  <h1 class="client-title">Client Stories</h1>
+  <h1 class="clients-title">Client Stories</h1>
   <div class="row align-items-center">
     <!-- Left Section -->
     <div class="col-12 col-md-3">
@@ -529,6 +539,7 @@
                     autoplay: true,
                     autoplaySpeed: 2000,
                     arrows: false,
+                    dots:true,
                     centerMode: false, 
                     responsive: [
                         {
@@ -545,7 +556,7 @@
             vertical: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             arrows: false,
             dots: false,
