@@ -29,7 +29,7 @@
     <div class="container-fluid">
       <!-- Brand Logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="/assests/images/logo.png" class="img-fluid navbar-logo" alt="logo">
+        <img src="/assests/images/logo.png" class=" navbar-logo" alt="logo">
       </a>
       <!-- Toggler for Mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-primary" href="#">HOME</a>
+            <a class="nav-link  active text-primary" href="#" style="color:#0A5B9C;">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">ABOUT US</a>
@@ -57,33 +57,26 @@
   </nav>
 <!---end of the navbar-->
 <!---main-page-->
-<div class="main-page py-5">
+<section class="main-page py-3">
   <div class="purifier-section">
     <!-- Left Card -->
-    <div class="info-card">
-      <div class="card-body">
-        <div class="icon-circle1">
-          <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+      <div class="info-card">
+        <div class="card-body">
+          <div class="icon-circle1">
+            <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+          </div>
+          <h3>Know More</h3>
+          <p>Protect your family with<br> clean, safe, and healthy water,<br> free from<br> contaminants and impurities.</p>
         </div>
-        <h3>Know More</h3>
-        <p>Protect your family with<br> clean, safe, and healthy water,<br> free from<br> contaminants and impurities.</p>
       </div>
-    </div>
-    <div class="vectors">
-      <div class="vector-1">
-        <img src="/assests/images/Vector 2.png" width="200px" height="100px">
-      </div>
-      <div class="vector-2">
-        <img src="/assests/images/Vector 3 (1).png" width="200px" height="100px">
-      </div>
-    </div>
+    <!--purifier text-gif-->
     <div class="purifier-gif">
-      <video class="video-as-image" autoplay muted loop>
-        <source src="/assests/images/Comp 1 (1).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+     <div class="purifier-img"></div>
+      <div class="under-text">
+        <p>your source for safe and healthy hydration</p>
+      </div>
     </div>
-
+    <!---purifier-carousel-->
     <div class="purifier-carousel">
       <div class="slick-carousel">
         <div class="slide-1"></div>
@@ -92,6 +85,7 @@
         <div class="slide-4"></div>
       </div>
     </div>
+
     <!-- Right Cards -->
     <div class="main-page-cards">
       <div class="card card1">
@@ -107,11 +101,20 @@
         </div>
       </div>
     </div>
+    <!---vectors(pointing arrows) -->
+    <div class="vectors">
+      <div class="vector-1">
+        <img src="/assests/images/Vector 2.png" width="200px" height="100px">
+      </div>
+      <div class="vector-2">
+        <img src="/assests/images/Vector 3 (1).png" width="200px" height="100px">
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 <!--- start of about us-->
-<div class="container-fluid about py-5">
+<section class="container-fluid about py-5 padding-x">
   <div class="container aboutus">
     <div class="row align-items-center">
       <!-- Text Section -->
@@ -122,15 +125,15 @@
         </p>
       </div>
       <!-- Image Section -->
-      <div class="col-12 col-md-6 text-center py-5">
+      <div class="col-12 col-md-6 text-end py-5">
         <img src="/assests/images/aboutus.jpeg" alt="About Us" class="img-fluid animate__animated animate__slideInRight">
       </div>
     </div>
   </div>
-  </div>
+</section>
 <!---end of about us-->
 <!-- start of why you choose us-->
-<div class="container choose position-absolute start-50 top-60 translate-middle">
+<div class="container choose position-absolute start-50 top-60 translate-middle padding-x">
   <h1 class="text-white">Why Choose Our Water Purifier?</h1>
   <div class="choose-section">
     <div class=" choosey">
@@ -154,12 +157,12 @@
 
 <!--start of overall container-->
   <!--products-->
-  <div class="container-fluid products-overall mt-5">
+  <div class="container-fluid products-overall mt-5 padding-x">
     <div class="container-fluid products animate__animated animate__slideInUp">
       <div class="products overall container-fluid">
         <h1>Products</h1>
         <p>
-          <span><a href="" class="text-decoration-none fw-bold">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none fw-bold active">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
           <span><a href="" class="text-decoration-none text-black fw-bold"> Bestseller</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
           <span><a href="" class="text-decoration-none text-black fw-bold"> Most Featured</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
           <span><a href="" class="text-decoration-none text-black fw-bold"> Special</a></span>
@@ -210,7 +213,7 @@
   </div>
   <!--end of products-->
   <!--start of products image-->
-<div class="container-fluid product-down">
+<div class="container-fluid product-down padding-x">
   <!-- Left Section -->
   <div class="left-section">
     <div class="image-wrapper">
@@ -248,7 +251,7 @@
 </div>
 <!--end of productimage-->
 <!--our services-->
-<div class="container-fluid services-section">
+<div class="container-fluid services-section padding-x">
   <h1 class="services-title">Our Services</h1>
   <div class="row align-items-center overall-service">
     <!-- Left Column: Services List -->
@@ -258,47 +261,55 @@
       </p>
       <ul class="services-list">
          <div class="entire-service">
-            <div class="service-icon">
-              <img src="/assests/images/service1.png" alt="Icon" class="icon img-fluid">
-            </div>
-            <div class="service-des">
-              <p>Water Purification System Sales</p>
+            <div class="icon-content">
+              <div class="service-icon">
+                <img src="/assests/images/service1.png" alt="Icon" class="icon img-fluid">
+              </div>
+              <div class="service-des">
+                <p>Water Purification System Sales</p>
+              </div>
             </div>
             <div class="icon-circle">
-              <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+              <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
             </div>
          </div>
          <div class="entire-service">
-          <div class="service-icon">
-            <img src="/assests/images/service2.png" alt="Icon" class="icon img-fluid">
-          </div>
-          <div class="service-des">
-            <p>Water Testing and Consultation</p>
+          <div class="icon-content">
+            <div class="service-icon">
+              <img src="/assests/images/service2.png" alt="Icon" class="icon img-fluid">
+            </div>
+            <div class="service-des">
+              <p>Water Testing and Consultation</p>
+            </div>
           </div>
           <div class="icon-circle">
-            <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+            <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
           </div>
        </div>
        <div class="entire-service">
-        <div class="service-icon">
-          <img src="/assests/images/service3.png" alt="Icon" class="icon img-fluid">
-        </div>
-        <div class="service-des">
-          <p> Installation Services</p>
+        <div class="icon-content">
+          <div class="service-icon">
+            <img src="/assests/images/service3.png" alt="Icon" class="icon img-fluid">
+          </div>
+          <div class="service-des">
+            <p> Installation Services</p>
+          </div>
         </div>
         <div class="icon-circle">
-          <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+          <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
         </div>
      </div>
      <div class="entire-service">
-      <div class="service-icon">
-        <img src="/assests/images/service4.png" alt="Icon" class="icon img-fluid">
-      </div>
-      <div class="service-des">
-        <p> Filter Replacement and Maintenance</p>
+      <div class="icon-content">
+        <div class="service-icon">
+          <img src="/assests/images/service4.png" alt="Icon" class="icon img-fluid">
+        </div>
+        <div class="service-des">
+          <p> Filter Replacement and Maintenance</p>
+        </div>
       </div>
       <div class="icon-circle">
-        <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+        <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
       </div>
       </div>
           
@@ -312,18 +323,18 @@
 </div>
 <!--end of services-->
 <!--product technology-->
-<div class="container-fluid product-technology-section">
+<div class="container-fluid product-technology-section padding-x">
   <h2 class="section-title">Product Technology</h2>
   <p class="section-des">
     Our water purifiers are designed to eliminate harmful bacteria and impurities commonly found in untreated natural water, making it safe and<br> healthy to drink. Incorporating advanced UV, UF, and RO technologies, we adhere to stringent industry standards to ensure superior quality and<br>reliable performance in every product.
   </p>
   <div class="row align-items-center">
     <!-- Left Glass -->
-    <div class="col-12 col-md-3 text-center">
+    <div class=" col-md-3 text-center">
       <img src="/assests/images/left glass.png" alt="Left Glass" class="img-fluid water-glasses">
     </div>
     <!-- Center Section -->
-    <div class="col-12 col-md-6 text-center">
+    <div class=" col-md-6 text-center">
       <div class="bubbles-row">
         <div class="bubble-item">
           <img src="/assests/images/bubble1.png" alt="UF" class="img-fluid bubble-icon">
@@ -345,14 +356,14 @@
       <button class="btn btn-buy-now">Buy Now</button>
     </div>
     <!-- Right Glass -->
-    <div class="col-12 col-md-3 text-center">
+    <div class=" col-md-3 text-center">
       <img src="/assests/images/rightclass.png" alt="Right Glass" class="img-fluid water-glasses">
     </div>
   </div>
 </div>
 <!---end of product technology-->
 <!---our clients-->
-<div class="container-fluid client-section">
+<div class="container-fluid client-section padding-x">
   <h1 class="clients-title">Client Stories</h1>
   <div class="row align-items-center">
     <!-- Left Section -->
@@ -414,7 +425,7 @@
 </div>
 
 <!---client section down-->
-<div class="container text-center py-5 animate__animated animate__slideInUp client-section-down">
+<div class="container text-center py-5 animate__animated animate__slideInUp client-section-down padding-x">
   <div class="row align-items-center">
     <div class="col-12 col-md-4 position-relative">
       <img src="/assests/images/img1.png" class="img-fluid mb-3" width="50px" height="50px" alt="Product Technology Icon">
@@ -437,33 +448,33 @@
 </div>
 <!---end of client down section-->
 <!--footer section-->
-  <header class="header position-absolute start-50 top-90 translate-middle">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-6 col-md-3">
-          <div class="feature-item">
-            <p><span><img src="/assests/images/freeshipping.png" alt="Free Delivery" class="img-fluid"></span> Free Delivery</p>
-          </div>
+<header class="header position-absolute start-50 top-90 translate-middle padding-x">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <p><span><img src="/assests/images/freeshipping.png" alt="Free Delivery" class="img-fluid"></span> Free Delivery</p>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="feature-item">
-            <p><span><img src="/assests/images/moneyback.png" alt="Money-back Guarantee" class="img-fluid"></span> Money-back Guarantee</p>
-          </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <p><span><img src="/assests/images/moneyback.png" alt="Money-back Guarantee" class="img-fluid"></span> Money-back Guarantee</p>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="feature-item">
-            <p><span><img src="/assests/images/techinical.png" alt="Proper Services" class="img-fluid"></span> Proper Services</p>
-          </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <p><span><img src="/assests/images/techinical.png" alt="Proper Services" class="img-fluid"></span> Proper Services</p>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="feature-item">
-            <p><span><img src="/assests/images/easy installation.png" alt="Free Installation" class="img-fluid"></span> Free Installation</p>
-          </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <p><span><img src="/assests/images/easy installation.png" alt="Free Installation" class="img-fluid"></span> Free Installation</p>
         </div>
       </div>
     </div>
-  </header>
-  <section class="about-contact py-5">
+  </div>
+</header>
+<section class="about-contact padding-x">
     <h1 class="display-1">PURIFIER.</h1>
     <hr class="line text-white">
     <div class="container">
@@ -478,13 +489,13 @@
             <div class="section-2">
               <address class="mt-4">
                 <p><strong class="text-white">Corporate Office</strong></p>
-                <p class="text-white"><i class="fa-solid fa-location-dot"></i> Tirifigu 260 Chapman Road, Suite 201 C<br>Newark, DE 19702</p>
-                <p class="text-white"><i class="fa-solid fa-phone"></i> Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: info@company.com</p>
+                <p class="text-white"><span><i class="fa-solid fa-location-dot fa-2xl"></i></span>&nbsp;&nbsp;Tirifigu 260 Chapman Road, Suite 201 C<br>Newark, DE 19702</p>
+                <p class="text-white"><span><i class="fa-solid fa-phone fa-2xl"></i></span>&nbsp;&nbsp;Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: info@company.com</p>
               </address>
               <div class="social-icons mt-3">
-                <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-facebook fa-2xl"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram fa-2xl"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
               </div>
             </div>
           </div>
@@ -509,11 +520,11 @@
       </div>
     </div>
     <hr class="line text-white">
-  <footer class="footer text-center text-white">
+  <footer class="footer text-center text-white" style="bottom: 0px; left: 0px; right:0px;">
     <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved</p>
-    <p class="mb-0"><a href="#" class="text-white text-decoration-none">User Terms & Conditions</a><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+    <p class="mb-0"><a href="#" class="text-white text-decoration-none">User Terms & Conditions </a><a href="#" class="text-white text-decoration-none">| Privacy Policy</a></p>
   </footer>
-  </section>
+</section>
 
 
 <!--scripts-->
@@ -550,17 +561,17 @@
                         }
                     ]
                 });
-      });
-      $('.slick-carousel').slick({
-            infinite: true,
-            vertical: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            arrows: false,
-            dots: false,
-        });
+    });
+    $('.slick-carousel').slick({
+      infinite: true,
+      vertical: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      dots: false,
+    });
    </script>
   
 </body>

@@ -6,44 +6,29 @@
 :root{
   --primary-color: #c6e8ff;
   --secondary-color: #F7F7F7;
+  --std-color:#0A5B9C;
+  --std-padding:50px;
 }
 body{
   overflow-x: hidden;
 }
-
-
-/*animations*/
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .purifier-gif {
-    width: 50%; /* Adjust initial size for smaller screens */
-    height: 50%;
-  }
+.padding-x{
+  padding-left:50px !important;
+  padding-right:50px !important;
 }
-
-@media (max-width: 576px) {
-  .purifier-gif {
-    width: 70%; /* Further adjust size for smaller screens */
-    height: 70%;
-  }
-}
-
-
-
-
 /*navbar styling*/
-
 .navbar {
   background-image: linear-gradient(#90D7FE,#BAE6FF);
-  padding: 0px 30px;
   box-shadow:5px 5px 10px #90D7FE;
+  padding-bottom:0px;
 }
 
 .navbar-brand .navbar-logo {
-  height: 50px; /* Adjust height */
-  width: auto; /* Maintain aspect ratio */
-  object-fit:contain; 
-  margin-left:100px
+  height: 50px;
+  width: auto; 
+  object-fit:fill; 
+  padding-left:50px !important;
+
 }
 
 .navbar-nav .nav-link {
@@ -54,7 +39,7 @@ body{
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007BFF;
+  color:var(--std-color);
 }
 
 .contact-btn {
@@ -71,10 +56,32 @@ body{
 
 .contact-btn:hover {
   background-color: white;
-  color: black;
+  color:var(--std-color);
+}
+@media (max-width: 992px) {
+  .navbar{
+    width:100vw;
+  }
+  .navbar-nav .nav-link {
+    font-size: 10px;
+    color:black;
+    font-weight:500;
+    margin: 0 10px;
+  }
+  .contact-btn {
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 100px;
+  }
 }
 
 @media (max-width: 768px) {
+  .navbar{
+    width:100vw;
+  }
   .navbar-brand .logo {
     margin-left: 0;
   }
@@ -99,7 +106,7 @@ body{
 /*styling for footer*/
 .header{
   background-color: #DAF2FF;
-  width:95%;
+  width:100%;
   margin:auto;
   padding:10px;
   border-radius: 10px;
@@ -107,11 +114,14 @@ body{
 .feature-item img {
   max-width: 20px;
 }
+.feature-item{
+  margin-top:10px;
+}
 
 .feature-item p {
   font-size: 1rem;
   font-weight: bold;
-  color: #0056b3;
+  color:var(--std-color);
 }
 
 /* Hero Section */
@@ -131,7 +141,7 @@ body{
 /* About & Contact Section */
 
 .about-contact {
-  background-image:url('/assests/images/footer.jpeg');
+  background:linear-gradient(rgba(98, 117, 149, 0.5), rgba(84, 107, 129, 0.5)),url('/assests/images/footer.jpeg');
   background-repeat: no-repeat;
   background-position:top;
 }
@@ -155,7 +165,7 @@ body{
 }
 
 .social-icons a:hover {
-  color: #0056b3;
+  color:var(--std-color);
 }
 
 .contact-form button {
@@ -165,9 +175,11 @@ body{
 }
 .display-1 {
   font-size: 15rem;
-  font-weight: bold;
+  font-weight:bolder;
   color:white;
   text-align: center;
+  margin-bottom:0px !important;
+  white-space:nowrap;
 }
 .footer{
   display:flex;
@@ -178,13 +190,82 @@ body{
   font-size: 0.5rem;
   gap:700px;
 }
+:root {
+  --primary-color: #c6e8ff;
+  --secondary-color: #F7F7F7;
+  --std-color: #0A5B9C;
+  --std-padding: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  .padding-x {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .padding-x {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar{
+    width:100vw;
+  }
+  .padding-x {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar{
+    width:100vw;
+  }
+  .padding-x {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar{
+    width:100vw;
+  }
+  .padding-x {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .display-1 {
     font-size: 2.5rem;
     top: 5px;
   }
   .footer{
     gap:0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar{
+    width:100vw;
+  }
+  .padding-x {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    width:100vw;
+  }
+  .padding-x {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 

@@ -1,6 +1,8 @@
 :root{
-  --primary-color: #c6e8ff;
+  --primary-color:#c6e8ff;
   --secondary-color: #F7F7F7;
+  --std-color:#0A5B9C;
+  --std-padding:0px 30px;
 }
 
 .main-page {
@@ -15,7 +17,6 @@
   width: 100vw;
   height: 100vh;
 }
-
 .purifier-section {
   display: flex;
   flex-wrap: wrap;
@@ -25,48 +26,58 @@
   padding: 20px;
   position: relative;
 }
-
 .purifier-gif {
-  position: relative;
-  width: 100%; /* Make container width responsive */
-  max-width: 700px; /* Set a maximum width for the container */
-  aspect-ratio: 7 / 2; /* Maintain a responsive aspect ratio */
+  width: 100%; 
+  max-width:60%; 
+  aspect-ratio: 7 / 2; 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items:center;
 }
 
-.purifier-gif .video-as-image {
+.purifier-gif .purifier-img {
+  background-image: url(/assests/images/FFDFDF.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
-  width: 100%; /* Ensure the video fills the container's width */
-  height: 100%; /* Ensure the video fills the container's height */
-  object-fit:fill; /* Ensure the entire video is visible without cropping */
+  width: 100%; 
+  height: 100%; 
+  object-fit:fill; 
+  padding:0px;
 }
-@media (max-width:768px) {
-  .purifier-gif {
-    max-width: 100%; /* Allow full width on smaller screens */
-    margin-top:0px;
-  }
-
+.purifier-gif .under-text{
+  margin-left:550px;
+  margin-top:-50px;
+  color: var(--std-color);
+  font-weight: bold;
 }
-
-
 .purifier-carousel {
-  flex: 1 1 100%;
   max-width: 400px;
+  height:auto;
   margin: auto;
-  margin-top: 600px;
   position:absolute;
+  top:220px;
 }
-.vectors .vector-1{
+.vectors{
   position:absolute;
-  top:230px !important;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+  top:300px !important;
+  left:500px;
+  gap:150px;
+  z-index:0;
 }
-.vectors .vector-2{
-  position:absolute;
-  top:300px;
-  left:900px;
+
+.vector-1 img,
+.vector-2 img {
+  width: 200px;
+  height: 100px;
 }
+
 
 .slick-carousel {
   display: flex;
@@ -92,8 +103,8 @@
 
 .main-page-cards {
   position: absolute;
-  right: 100px;
-  top: 230px;
+  right: 150px;
+  top: 250px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -123,105 +134,337 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
-  background-color: #0A5B9C;
+  background-color:var(--std-color);
 }
 .main-page-cards .card .btn{
-  background-color: #0A5B9C;
+  background-color:var(--std-color);
 }
 .info-card {
   position: absolute;
-  left: 70px;
-  top: 320px;
-  background: #eaf6fd; /* Light blue background */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px 20px 20px 20px; /* Padding for card content */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  left: 300px;
+  top: 350px;
+  background: #eaf6fd; 
+  border-radius: 15px; 
+  padding: 20px 20px 20px 20px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   max-width: 300px;
   text-align: start;
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for emphasis */
-  position: relative; /* Allows absolutely positioned elements within */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index:2;
 }
 
 .info-card h3 {
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: start;
-  color: #00529b; /* Blue text color */
+  color: var(--std-color);
   font-weight: bold;
 }
 
 .info-card p {
-  font-size: 0.85rem; /* Readable font size */
+  font-size: 0.85rem;
   text-align: start;
-  color: #333; /* Gray text for good contrast */
-  line-height: 1.5; /* Line spacing for readability */
+  color: #333; 
+  line-height: 1.5;
 }
 
 .icon-circle1 {
   position: absolute;
-  top: 10px; /* Adjust for spacing within the card */
-  right: 10px; /* Align to the right within the card */
-  width: 30px; /* Diameter of the circle */
-  height: 30px; /* Match width for a perfect circle */
-  background: #ffffff; /* White background for the icon */
-  border: 2px solid #00529b; /* Blue border for emphasis */
-  border-radius: 50%; /* Makes it a circle */
+  top: 10px;
+  right: 10px; 
+  width: 30px;
+  height: 30px; 
+  background: #ffffff; 
+  border: 2px solid var(--std-color); 
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the arrow icon */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the circle */
+  justify-content: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon-circle1 i {
-  color: #00529b; /* Blue arrow icon color */
-  font-size: 0.9rem; /* Adjust size for better fit */
+  color:var(--std-color); 
+  font-size: 0.9rem; 
 }
 
 /* Responsive Design*/
+@media screen and (max-width: 1400px) {
+  .vectors {
+    top: 290px; 
+    left: 350px; 
+    gap: 120px; 
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 190px; 
+    height: 95px;
+  }
+  .purifier-gif .under-text{
+    margin-left:400px;
+    margin-top:-40px;
+    color:var(--std-color);
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .info-card {
+    left: 200px;
+    top: 350px;
+    max-width: 250px;
+    padding: 15px; 
+  }
+
+  .info-card h3 {
+    font-size: 0.9rem; 
+  }
+
+  .info-card p {
+    font-size: 0.8rem; 
+  }
+
+  .icon-circle1 {
+    width: 25px; 
+    height: 25px; 
+    top: 5px; 
+    right: 5px; 
+  }
+
+  .icon-circle1 i {
+    font-size: 0.8rem; 
+  }
+  .main-page-cards {
+    right: 100px; /* Adjust the position */
+    top: 250px;
+    gap: 15px;
+  }
+  .main-page-cards .card1 {
+    width: 220px;
+    height: 220px;
+  }
+  .main-page-cards .card .p1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .purifier-gif .under-text{
+    margin-left:400px;
+    margin-top:-40px;
+    color: var(--std-color);
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .info-card {
+    left: 150px;
+    top: 350px;
+    max-width: 250px;
+    padding: 15px; 
+  }
+
+  .info-card h3 {
+    font-size: 0.9rem; 
+  }
+
+  .info-card p {
+    font-size: 0.8rem; 
+  }
+
+  .icon-circle1 {
+    width: 25px; 
+    height: 25px; 
+    top: 5px; 
+    right: 5px; 
+  }
+
+  .icon-circle1 i {
+    font-size: 0.8rem; 
+  }
+  .vectors {
+    top: 280px !important;
+    left: 300px !important;
+    gap: 100px;
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 180px !important;
+    height: 90px !important;
+  }
+  .main-page-cards {
+    right: 80px; /* Further adjust the position */
+    top: 250px;
+    gap: 15px;
+  }
+  .main-page-cards .card1 {
+    width: 200px;
+    height: 200px;
+  }
+  .main-page-cards .card img {
+    border-radius: 15px; /* Slightly smaller border radius */
+  }
+}
+@media (max-width: 1024px) {
+  .purifier-gif .under-text{
+    margin-left:300px;
+    font-size: 0.75rem;
+    margin-top:-30px;
+    color: var(--std-color);
+    font-weight: bold;
+  }
+  .info-card {
+    left: 150px;
+    top: 350px;
+    max-width: 250px;
+    padding: 15px; 
+  }
+
+  .info-card h3 {
+    font-size: 0.9rem; 
+  }
+
+  .info-card p {
+    font-size: 0.8rem; 
+  }
+
+  .icon-circle1 {
+    width: 25px; 
+    height: 25px; 
+    top: 5px; 
+    right: 5px; 
+  }
+
+  .icon-circle1 i {
+    font-size: 0.8rem; 
+  }
+  .vectors {
+    top: 260px !important;
+    left: 300px !important;
+    gap: 80px !important;
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 150px !important;
+    height: 75px !important;
+  }
+  .main-page-cards {
+    right: 60px;
+    top: 250px;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center;
+  }
+  .main-page-cards .card1 {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width:992px) {
+  .purifier-gif .under-text{
+    margin-left:300px;
+    font-size: 0.75rem;
+    margin-top:-30px;
+    color:var(--std-color);
+    font-weight: bold;
+  }
+  .info-card {
+    left: 100px;
+    top: 350px;
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  .info-card h3 {
+    font-size: 0.9rem; 
+  }
+
+  .info-card p {
+    font-size: 0.5rem; 
+  }
+
+  .icon-circle1 {
+    width: 25px; 
+    height: 25px; 
+    top: 5px; 
+    right: 5px; 
+  }
+
+  .icon-circle1 i {
+    font-size: 0.8rem; 
+  }
+  .vectors {
+    top: 300px !important;
+    left: 250px !important;
+    gap: 100px !important;
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 130px !important;
+    height: 65px !important;
+  }
+  .main-page-cards {
+    right: 40px;
+    top: 250px;
+    gap: 10px;
+  }
+  .main-page-cards .card1 {
+    width: 160px;
+    height: 160px;
+    font-size:0.5rem;
+  }
+  .main-page-cards .card2 {
+    width: 160px;
+    height: 160px;
+    font-size: 0.5rem;
+  }
+  .main-page-cards .card2 .btn {
+    width: 40px;
+    height: 20px;
+    font-size: 0.5rem;
+    padding:0px;
+  }
+  .main-page-cards .card2 .p1 {
+    font-size: 0.5rem;
+    padding:0px;
+  }
+  .main-page-cards .card img {
+    border-radius: 10px;
+  }
+}
 @media (max-width: 768px) {
+  .purifier-section{
+    bottom:0px;
+  }
   .purifier-gif {
     max-width: 100%;
-    height: auto;
+    height:50%;
     margin-top:0px;
   }
 
   .info-card {
-    left: 50px; /* Adjust card position for smaller screens */
-    top: 280px; /* Adjust vertical position */
-    max-width: 250px; /* Reduce card size */
-    padding: 15px; /* Reduce padding */
+    left: 50px;
+    top: 400px;
+    max-width: 150px;
+    padding: 15px; 
   }
 
   .info-card h3 {
-    font-size: 0.9rem; /* Reduce font size */
+    font-size: 0.9rem; 
   }
 
   .info-card p {
-    font-size: 0.8rem; /* Adjust font size */
+    font-size: 0.5rem; 
   }
 
   .icon-circle1 {
-    width: 25px; /* Reduce circle size */
-    height: 25px; /* Match width */
-    top: 5px; /* Adjust position */
-    right: 5px; /* Adjust position */
+    width: 25px; 
+    height: 25px; 
+    top: 5px; 
+    right: 5px; 
   }
 
   .icon-circle1 i {
-    font-size: 0.8rem; /* Adjust icon size */
-  }
-
-  .main-page-cards {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    font-size: 0.8rem; 
   }
   .purifier-carousel {
     max-width: 250px;
-    margin-top: 0px;
-    margin-left:150px;
-    position: static; /* Position adjusted for better alignment on small screens */
+    top:350px !important;
   }
 
   .slick-carousel .slide-1,
@@ -239,6 +482,52 @@
     top:300px;
     left:900px;
   }
+  .purifier-gif .under-text{
+    margin-left:300px;
+    font-size: 0.75rem;
+    margin-top:-30px;
+    color: var(--std-color);
+    font-weight: bold;
+  }
+  .vectors {
+    top: 150px !important;
+    left: 200px !important;
+    gap: 40px !important;
+    flex-direction: column; /* Stack vertically */
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  .main-page-cards {
+    right: 40px;
+    top: 250px;
+    gap: 10px;
+  }
+  .main-page-cards .card1 {
+    width: 160px;
+    height: 160px;
+    font-size:0.5rem;
+  }
+  .main-page-cards .card2 {
+    width: 160px;
+    height: 160px;
+    font-size: 0.5rem;
+  }
+  .main-page-cards .card2 .btn {
+    width: 40px;
+    height: 20px;
+    font-size: 0.5rem;
+    padding:0px;
+  }
+  .main-page-cards .card2 .p1 {
+    font-size: 0.5rem;
+    padding:0px !important;
+  }
+  .main-page-cards .card img {
+    border-radius: 10px;
+  }
 }
 @media (max-width: 576px) {
   .purifier-gif {
@@ -247,42 +536,34 @@
     margin-top:0px;
   }
   .info-card {
-    left: 30px; /* Further adjust position */
-    top: 250px; /* Adjust vertical position */
-    max-width: 200px; /* Further reduce card size */
-    padding: 10px; /* Reduce padding */
+    left: 30px;
+    top: 450px;
+    max-width: 150px; 
+    padding: 10px; 
+    z-index:20px;
   }
 
   .info-card h3 {
-    font-size: 0.8rem; /* Further reduce font size */
+    font-size: 0.8rem; 
   }
 
   .info-card p {
-    font-size: 0.75rem; /* Adjust font size */
+    font-size: 0.5rem; 
   }
 
   .icon-circle1 {
-    width: 20px; /* Further reduce circle size */
-    height: 20px; /* Match width */
-    top: 5px; /* Adjust position */
-    right: 5px; /* Adjust position */
+    width: 20px; 
+    height: 20px; 
+    top: 5px; 
+    right: 5px; 
   }
 
   .icon-circle1 i {
-    font-size: 0.7rem; /* Further adjust icon size */
-  }
-
-  .main-page-cards .card {
-    padding: 15px;
-  }
-
-  .main-page-cards .card p {
-    font-size: 0.9rem;
+    font-size: 0.7rem; 
   }
   .purifier-carousel {
     max-width: 300px;
-    margin-top: 0px;
-    position: static; /* Position adjusted for better alignment on small screens */
+    top:350px !important;
   }
 
   .slick-carousel .slide-1,
@@ -290,6 +571,29 @@
   .slick-carousel .slide-3,
   .slick-carousel .slide-4 {
     height: 250px;
+  }
+  .purifier-gif .under-text{
+    margin-left:0px !important;
+    color: var(--std-color);
+    font-weight: bold;
+  }
+  .vectors {
+    top: 170px !important;
+    left: 150px !important;
+    gap: 30px !important;
+    flex-direction: column;
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 80px !important;
+    height: 40px !important;
+  }
+  .main-page-cards .card1 {
+    width: 120px;
+    height: 120px;
+  }
+  .main-page-cards .card .p1 {
+    font-size: 0.6rem;
   }
 }
 
@@ -312,8 +616,7 @@
   }
   .purifier-carousel {
     max-width: 250px;
-    margin-top: 50px;
-    position: static; /* Position adjusted for better alignment on small screens */
+    top: 350px !important;
   }
 
   .slick-carousel .slide-1,
@@ -322,14 +625,39 @@
   .slick-carousel .slide-4 {
     height: 250px;
   }
+  .purifier-gif .under-text{
+    color: var(--std-color);
+    font-weight: bold;
+    margin-left:0px !important;
+  }
+  .vectors {
+    top: 180px !important;
+    left: 50px !important;
+    gap: 20px !important;
+    flex-direction: column;
+  }
+  .vector-1 img,
+  .vector-2 img {
+    width: 60px !important;
+    height: 30px !important;
+  }
+  .main-page-cards .card1 {
+    width: 100px;
+    height: 100px;
+  }
+  .main-page-cards .card img {
+    border-radius: 5px; /* Minimized border radius */
+  }
+  .main-page-cards .card .p1 {
+    font-size: 0.55rem;
+  }
 }
-
-
 /*end of mainpage*/
 .about {
- background-image: url('/assests/images/aboutus-water.jpeg');
+ background-image: url('/assests/images/aboutus-water1.jpeg');
  background-repeat: no-repeat;
  background-position:top;
+ opacity:0.8;
  border-radius: 70px;
   padding: 20px;
   overflow-x: hidden;
@@ -337,22 +665,6 @@
   margin-bottom:60px;
   
 }
-/*animations*/
-.animate__animated.animate__slideInLeft {
-  --animate-duration: 2s;
-}
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
-}
-.animate__animated.animate__slideInRight{
-    --animate-duration: 2s;
-}
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
-}
-
 h1 {
   font-weight: bold;
   color: #333;
@@ -374,7 +686,7 @@ h1 {
 
 .choose {
   text-align: center;
-  justify-items: space-around;
+  justify-items: space-between;
   background:linear-gradient(#3896E1,#57BCF3,#1B77C1);
   color: white;
   padding: 40px;
@@ -520,10 +832,12 @@ h1 {
   margin-top: 20px;
   background-color: #DAF2FF;
   border: 2px solid white;
+  padding: 10px 40px;
 }
 
 .btn-view:hover {
   background-color: var(--secondary-color);
+  color:var(--std-color);
 }
 
 /* Responsive Design */
@@ -558,7 +872,7 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   height: 50vh; /* Fixed height */
-  background: linear-gradient(#1B77C1, #3CAEEC, #0A5B9C);
+  background: linear-gradient(#1B77C1, #3CAEEC, var(--std-color));
   padding:0px !important;
 }
 
@@ -594,7 +908,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
-  color: #0A5B9C;
+  color:var(--std-color);
   font-size: 1.3rem;
   line-height: 1.4;
 }
@@ -646,11 +960,11 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .features span .icon {
-  max-width: 40px;
+  max-width: 50px;
   height: auto;
 }
 
@@ -737,16 +1051,20 @@ h1 {
 /*our services*/
 
 .services-section {
-  background-color: #DAF2FF;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/assests/images/services-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  padding: 50px;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top:0px;
   border-bottom-left-radius: 70px; 
   border-bottom-right-radius: 70px;
 }
 
 .services-title {
   font-size: 10rem;
-  font-weight: bold;
+  font-weight: bolder;
   color: black;
   position: absolute;
   top: 10px;
@@ -799,11 +1117,17 @@ h1 {
   align-items: center;
   padding:5px;
 }
+.entire-service .icon-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .entire-service .service-des p {
   font-size: 1.2rem;
   font-weight:500;
-  color: #003b73;
+  color: var(--std-color);
   line-height: 1.6;
 }
 
@@ -815,7 +1139,7 @@ h1 {
 
 .services-list .icon-circle {
   font-size: 1rem;
-  color: #0078d4;
+  color: var(--std-color);
 }
 
 .image-section {
@@ -984,6 +1308,10 @@ h1 {
   padding: 40px 20px;
 }
 
+.flow-image .flow-img{
+  border-radius: 0%;
+}
+
 .section-title {
   font-size: 2rem;
   font-weight: bold;
@@ -1029,14 +1357,16 @@ h1 {
 }
 
 .btn-buy-now {
-  background-color: #DAF2FF;
-  border: 1px solid #0A5B9C;
-  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid var(--std-color);
+  border-radius:10px !important;
+  padding: 10px 40px;
   font-size: 1rem;
 }
 
 .btn-buy-now:hover {
-  background-color: var(--secondary-color);
+  background-color:var(--std-color);
+  color:white;
 }
 
 /* Responsive Design */
@@ -1061,6 +1391,9 @@ h1 {
 @media (max-width: 768px) {
   .bubbles-row {
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .bubble-item {
@@ -1102,12 +1435,14 @@ h1 {
 
 /*our clients*/
 .client-section {
-  background-color:#DAF2FF;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/assests/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 25px;
 }
 .clients-title {
   font-size: 10rem;
-  font-weight: bold;
+  font-weight:bolder;
   color: black;
   top: 10px;
   margin-left:150px;
@@ -1144,8 +1479,14 @@ h1 {
   list-style: none; /* Remove default list styling */
   display: flex; /* Align dots vertically or horizontally as needed */
   flex-direction: row; /* Stack dots vertically */
-   /* Space between dots */
 }
+.slick-dots li.slick-active {
+  background-color: #0056a0; /* Active dot color (blue) */
+  width: 40px; /* Make the active dot elongated */
+  height:15px;
+  border-radius: 20px; /* Elongate into an oval */
+}
+
 
 .card-carousel .card { /* 3 cards per row */
   background: #fff;
@@ -1156,11 +1497,12 @@ h1 {
   
 }
 
+
 .card-carousel .card-body {
   text-align: center;
 }
 .hr-line{
-  color:#0A5B9C;
+  color:var(--std-color);
   font-weight: bolder;
   width:50px;
 }
@@ -1175,7 +1517,7 @@ h1 {
 
 .card-carousel .card h5 {
   font-size: 1.2rem;
-  color: #003b73;
+  color: var(--std-color);
   margin-bottom: 10px;
 }
 
@@ -1269,24 +1611,16 @@ h1 {
 }
 
 /*clients down section*/
-/*animations*/
-.animate__animated .animate__slideInUp{
-  --animate-duration: 5s;
-}
-:root {
-  --animate-duration: 5000ms;
-  --animate-delay: 0.9s;
-}
 .vertical-line {
   position: absolute;
   top: 0;
   right: 0;
   height:100%;
   width: 0.5px;
-  background-color:#0A5B9C;
+  background-color:var(--std-color);
 }
 .client-section-down{
-  color:#0A5B9C;
+  color:var(--std-color);
 }
 .row > .col-md-4:last-child .vertical-line {
   display: none; /* Hide the last vertical line */
