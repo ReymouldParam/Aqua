@@ -25,7 +25,7 @@
 </head>
 <body>
   <!--header navbar-->
-  <nav class="navbar navbar-expand-md fixed-top">
+  <nav class="navbar navbar-expand-md fixed-top padding-x">
     <div class="container-fluid">
       <!-- Brand Logo -->
       <a class="navbar-brand" href="index.html">
@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link  active text-primary" href="#" style="color:#0A5B9C;">HOME</a>
+            <a class="nav-link  active" href="#" style="color:#0A5B9C;">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">ABOUT US</a>
@@ -115,7 +115,7 @@
 
 <!--- start of about us-->
 <section class="container-fluid about py-5 padding-x">
-  <div class="container aboutus">
+  <div class="aboutus">
     <div class="row align-items-center">
       <!-- Text Section -->
       <div class="col-12 col-md-6 py-5 ">
@@ -133,7 +133,7 @@
 </section>
 <!---end of about us-->
 <!-- start of why you choose us-->
-<div class="container choose position-absolute start-50 top-60 translate-middle padding-x">
+<div class="container choose position-absolute start-50 top-60 translate-middle">
   <h1 class="text-white">Why Choose Our Water Purifier?</h1>
   <div class="choose-section">
     <div class=" choosey">
@@ -162,10 +162,10 @@
       <div class="products overall container-fluid">
         <h1>Products</h1>
         <p>
-          <span><a href="" class="text-decoration-none fw-bold active">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Bestseller</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Most Featured</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Special</a></span>
+          <span><a href="" class="text-decoration-none fw-bold active fs-5">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold fs-5"> Bestseller</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold fs-5"> Most Featured</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold fs-5"> Special</a></span>
         </p>
         <div class="product-container">
           <div class="card product-card">
@@ -191,6 +191,24 @@
           <div class="card product-card">
             <img src="/assests/images/product3.png" alt="Ultraviolet (UV) Filter">
             <p>Ultraviolet (UV) Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <img src="/assests/images/product1.png" alt="Alkaline Filter">
+            <p>Alkaline Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <img src="/assests/images/product1.png" alt="Alkaline Filter">
+            <p>Alkaline Filter</p>
             <p>
               <span class="text-warning">Mineral</span> | 
               <span class="text-success"> RO+UV+UF+MC</span> | 
@@ -334,7 +352,7 @@
       <img src="/assests/images/left glass.png" alt="Left Glass" class="img-fluid water-glasses">
     </div>
     <!-- Center Section -->
-    <div class=" col-md-6 text-center">
+    <div class=" col-md-6 text-center bubbles-container">
       <div class="bubbles-row">
         <div class="bubble-item">
           <img src="/assests/images/bubble1.png" alt="UF" class="img-fluid bubble-icon">
@@ -425,23 +443,23 @@
 </div>
 
 <!---client section down-->
-<div class="container text-center py-5 animate__animated animate__slideInUp client-section-down padding-x">
+<div class="client-down text-center py-5  padding-x">
   <div class="row align-items-center">
     <div class="col-12 col-md-4 position-relative">
       <img src="/assests/images/img1.png" class="img-fluid mb-3" width="50px" height="50px" alt="Product Technology Icon">
-      <h3 class="text fw-bold text-center">Product Technology</h3>
+      <h3 class="text fw-bold text-center" style="color:#0A5B9C;">Product Technology</h3>
       <p>Our water purifiers are designed to eliminate harmful bacteria and</p>
       <div class="vertical-line d-none d-md-block"></div>
     </div>
     <div class="col-12 col-md-4 position-relative">
       <img src="/assests/images/img2.png" class="img-fluid mb-3" width="50px" height="50px" alt="Most Trusted & Preferred Brand Icon">
-      <h3  class="text fw-bold text-center">Most Trusted & Preferred Brand</h3>
+      <h3  class="text fw-bold text-center" style="color:#0A5B9C;">Most Trusted & Preferred Brand</h3>
       <p>Our water purifiers are designed to eliminate harmful bacteria and</p>
       <div class="vertical-line d-none d-md-block"></div>
     </div>
     <div class="col-12 col-md-4">
       <img src="/assests/images/img3.png" class="img-fluid mb-3" width="50px" height="50px" alt="Trusted by More Clients Icon">
-      <h3 class="text  fw-bold text-center">Trusted by More Clients</h3>
+      <h3 class="text  fw-bold text-center" style="color:#0A5B9C;">Trusted by More Clients</h3>
       <p>Our water purifiers are designed to eliminate harmful bacteria and</p>
     </div>
   </div>
@@ -449,7 +467,6 @@
 <!---end of client down section-->
 <!--footer section-->
 <header class="header position-absolute start-50 top-90 translate-middle padding-x">
-  <div class="container">
     <div class="row text-center">
       <div class="col-6 col-md-3">
         <div class="feature-item">
@@ -471,14 +488,14 @@
           <p><span><img src="/assests/images/easy installation.png" alt="Free Installation" class="img-fluid"></span> Free Installation</p>
         </div>
       </div>
-    </div>
   </div>
 </header>
-<section class="about-contact padding-x">
-    <h1 class="display-1">PURIFIER.</h1>
+<section class="about-contact">
+    <div class="text-purifier padding-x">
+      <h1 class="display-1">PURIFIER.</h1>
+    </div>
     <hr class="line text-white">
-    <div class="container">
-      <div class="row g-4 overall-contact">
+      <div class="row g-4 overall-contact padding-x">
         <div class="col-12 col-md-6">
           <div class="about-section">
             <div class="section-1">
@@ -518,7 +535,6 @@
           </div>
         </div>
       </div>
-    </div>
     <hr class="line text-white">
   <footer class="footer text-center text-white" style="bottom: 0px; left: 0px; right:0px;">
     <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved</p>
@@ -572,7 +588,34 @@
       arrows: false,
       dots: false,
     });
-   </script>
+
+    /*products-carousel*/
+  $(document).ready(function(){
+  $('.product-container').slick({
+    slidesToShow: 4, /* Show 3 products on larger screens */
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024, /* Tablets */
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768, /* Mobile screens */
+        settings: {
+          slidesToShow: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+});
+</script>
   
 </body>
 </html>
