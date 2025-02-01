@@ -94,10 +94,10 @@
           <div class="card card1">
             <div class="inner-container">
               <div class="card-fade-carousel">
-                <img src="/assests/images/main2.png" alt="purifier" class="img-fluid" max-width="100%">
-                <img src="/assests/images/maincard-4.png" alt="purifier" class="img-fluid" max-width="100%">
-                <img src="/assests/images/maincard-3.png" alt="purifier" class="img-fluid" max-width="100%">
-                <img src="/assests/images/maincard-2.png" alt="purifier" class="img-fluid" max-width="100%">
+                <img src="/assests/images/main2.png" alt="purifier" class="img-fluid" width="100%">
+                <img src="/assests/images/maincard-4.png" alt="purifier" class="img-fluid" width="100%">
+                <img src="/assests/images/maincard-3.png" alt="purifier" class="img-fluid" width="100%">
+                <img src="/assests/images/maincard-2.png" alt="purifier" class="img-fluid" width="100%">
               </div>
             </div>
             <div class="text-container">
@@ -117,7 +117,7 @@
     <!---vectors(pointing arrows) -->
     <div class="vectors">
       <div class="vector-1">
-        <img src="/assests/images/Vector 2.png" width="200px" height="100px">
+        <img src="/assests/images/Vector 2@2x.png" width="200px" height="100px">
       </div>
       <div class="vector-2">
         <img src="/assests/images/Vector 3 (1).png" width="200px" height="100px">
@@ -139,17 +139,22 @@
 
 <!--- start of about us-->
 <section class="container-fluid about py-5 padding-x">
+  <div class="arrow-container">
+    <div class="about-icon-circle">
+      <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+    </div><!-- Unicode for a down arrow -->
+  </div>
   <div class="aboutus">
     <div class="row align-items-center">
       <!-- Text Section -->
-      <div class="col-12 col-md-6 py-5 ">
+      <div class="col-12 col-md-6 py-5 about-left ">
         <h1 class="text-start">About Us</h1>
         <p>
           The first step is to draw the water into the device using gravity. Once the water is inside, it passes through a series of filters. These filters remove impurities such as dirt, dust, and bacteria. The final step is to pass the filtered water through a UV light or ozone generator, which kills any remaining bacteria. Kent RO impresses with its innovation and versatile range, while Pureit RO stands out for its commitment to safety and effectiveness. The choice between them depends on individual preferences, budget constraints, and specific needs.
         </p>
       </div>
       <!-- Image Section -->
-      <div class="col-12 col-md-6 text-end py-5">
+      <div class="col-12 col-md-6 text-end py-5 about-right">
         <img src="/assests/images/water-filters-glass-water-front-view.png" alt="About Us" class="img-fluid">
       </div>
     </div>
@@ -400,7 +405,10 @@
       <img src="/assests/images/rightclass.png" alt="Right Glass" class="img-fluid water-glasses">
     </div>
     <div class="bubble-down">
-    <h3 class="cta-title">Ready to Experience Pure Water Filtration</h3>
+      <div class="flow-image">
+        <img src="/assests/images/bottom-banner-water-purification 1.png" class="img-fluid">
+      </div>
+    <h3 class="cta-title pt-5">Ready to Experience Pure Water Filtration</h3>
     <button class="btn btn-buy-now">Buy Now</button>
     </div>
   </div>
@@ -469,8 +477,8 @@
 </div>
 
 <!---client section down-->
-<div class="client-down text-center py-5  padding-x">
-  <div class="row align-items-center">
+<div class="client-down text-center py-5  padding-x animate__animated animate__fadeInUp">
+  <div class="row align-items-center client-section-down">
     <div class="col-12 col-md-4 position-relative">
       <img src="/assests/images/img1.png" class="img-fluid mb-3" width="50px" height="50px" alt="Product Technology Icon">
       <h3 class="text fw-bold text-center" style="color:#0A5B9C;">Product Technology</h3>
@@ -518,7 +526,7 @@
 </header>
 <section class="about-contact">
     <div class="text-purifier padding-x">
-      <h1 class="display-1 py-5">PURIFIER.</h1>
+      <h1 class="display-1">PURIFIER.</h1>
     </div>
     <hr class="line text-white">
       <div class="row g-4 overall-contact padding-x">
@@ -562,7 +570,7 @@
         </div>
       </div>
     <hr class="line text-white">
-  <footer class="footer text-center text-white" style="bottom: 0px; left: 0px; right:0px;">
+  <footer class="footer text-center text-white padding-x" style="bottom: 0px; left: 0px; right:0px;">
     <p class="mb-0 text-white">Copyright © 2024 All Rights Reserved</p>
     <p class="mb-0"><a href="#" class="text-white text-decoration-none">User Terms & Conditions </a><a href="#" class="text-white text-decoration-none">| Privacy Policy</a></p>
   </footer>
