@@ -69,10 +69,12 @@
        <div class="left-card">
         <div class="info-card">
           <div class="card-body">
-            <div class="icon-circle1">
-              <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+            <div class="know-more">
+              <h3>Know More</h3>
+              <div class="icon-circle1">
+                <i class="fa-solid fa-arrow-right-long fa-xs"></i>
+              </div>
             </div>
-            <h3>Know More</h3>
             <p>Protect your family with<br> clean, safe, and healthy water,<br> free from<br> contaminants and impurities.</p>
           </div>
         </div>  
@@ -90,19 +92,28 @@
        <div class="right-card">
         <div class="main-page-cards">
           <div class="card card1">
-            <div class="card-body">
+            <div class="inner-container">
               <div class="card-fade-carousel">
                 <img src="/assests/images/main2.png" alt="purifier" class="img-fluid" max-width="100%">
                 <img src="/assests/images/maincard-4.png" alt="purifier" class="img-fluid" max-width="100%">
                 <img src="/assests/images/maincard-3.png" alt="purifier" class="img-fluid" max-width="100%">
                 <img src="/assests/images/maincard-2.png" alt="purifier" class="img-fluid" max-width="100%">
               </div>
-            <p>Charcoal Filter Stage</p>
+            </div>
+            <div class="text-container">
+              <div class="text-carousel">
+                <p class="p1">Charcoal Filter Stage</p>
+                <p class="p1">Alkaline Filter</p>
+                <p class="p1">ultraviolet Filter</p>
+                <p class="p1">Activated Carbon Filter</p>
+              </div>
+              <button class="btn text-white">Shop Now</button>
             </div>
           </div>
         </div>    
        </div>
     </div>
+    
     <!---vectors(pointing arrows) -->
     <div class="vectors">
       <div class="vector-1">
@@ -113,6 +124,17 @@
       </div>
     </div>
    </div>
+   <div class="bottom-card">
+    <div class="card card2">
+      <div class="card-body">
+        <div class="shop-now">
+          <p>Charcoal Fix Filter</p>
+          <button class="btn text-white">Shop Now</button>
+        </div>
+        <p class="p2">Protect your family with clean, safe, and healthy<br> water free from contaminants and impurities.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--- start of about us-->
@@ -622,6 +644,15 @@
 /*card-fade-carousel*/
 
 $('.card-fade-carousel').slick({
+  dots:false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  arrows:false,
+  autoplay:2000,
+  cssEase: 'linear'
+});
+$('.text-carousel').slick({
   dots:false,
   infinite: true,
   speed: 500,

@@ -258,6 +258,9 @@ body{
 }
 
 @media (max-width: 768px) {
+  .body{
+    overflow-x: hidden;
+  }
   .navbar{
     width:auto;
   }
@@ -290,6 +293,9 @@ body{
 }
 
 @media (max-width: 576px) {
+  .body{
+    overflow-x: hidden;
+  }
   .navbar{
     width:100vw;
   }
@@ -313,6 +319,9 @@ body{
 }
 
 @media (max-width: 480px) {
+  .body{
+    overflow-x: hidden;
+  }
   .navbar{
     width:100vw;
   }
