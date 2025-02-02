@@ -387,11 +387,6 @@
 }
 @media (max-width: 768px) {
   .main-page {
-    background-image: url('/assests/images/mobile-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    color: white;
     padding: 0; 
     position: relative;
     width: 100vw !important;
@@ -432,6 +427,7 @@
     height: 20vh;
     align-content: justify;
     animation:none;
+    position:static;
   }
   
   .info-card h3 {
@@ -462,16 +458,15 @@
     margin: auto;
   }
   .slick-carousel {
-    height:50vh;
+    height:auto;
   }
 .slick-carousel .slide-1,
 .slick-carousel .slide-2,
 .slick-carousel .slide-3,
 .slick-carousel .slide-4 {
-  width: 75% !important;
-  height: 60vh;
+  width: 80% !important;
+  height: 25vh;
 }
-
   .main-page-cards .card {
     border-radius: 20px;
     padding: 5px;
@@ -479,8 +474,9 @@
   .main-page-cards .card1{
     width: 70vw;
     height: 20vh;
-    top:-100px;
     left:0px !important;
+    position:static;
+    margin-top:-150px;
     animation:none;
   }
   .main-page-cards .card1 .img-fluid{
@@ -507,7 +503,7 @@
     display:none;
   }
   .text-container .btn{
-    display: block;
+    display: block !important;
     font-size:0.5rem;
     background-color:var(--std-color);
     border-radius:10px;
@@ -537,18 +533,9 @@
     text-align: center !important;
     font-size: 0.75rem;
     margin-top:10px;
-    color: var(--std-color);
-    font-weight: bold;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block;
     width: 100%; 
   }
   .entire-container{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
     margin-top:0px;
     height:50%;
     overflow-x: hidden;
@@ -561,6 +548,7 @@
     width:70vw;
     height:20vh;
     align-content: justify;
+    position:static;
   }
   
   .info-card h3 {
@@ -591,14 +579,14 @@
     margin: auto;
   }
   .slick-carousel {
-    height:50vh;
+    height:auto;
   }
 .slick-carousel .slide-1,
 .slick-carousel .slide-2,
 .slick-carousel .slide-3,
 .slick-carousel .slide-4 {
-  width: 100% !important;
-  height: 60vh;
+  width: 80% !important;
+  height: 25vh;
 }
 
   .main-page-cards .card {
@@ -608,8 +596,9 @@
   .main-page-cards .card1{
     width: 70vw;
     height: 20vh;
-    top:-120px;
     left:0px !important;
+    position:static;
+    margin-top:-150px;
   }
   .main-page-cards .card1 .img-fluid{
     width: 100% !important;
@@ -633,6 +622,15 @@
   }
   .bottom-card{
     display:none;
+  }
+  .text-container .btn{
+    display: block !important;
+    font-size:0.5rem;
+    background-color:var(--std-color);
+    border-radius:10px;
+    padding-left:25px;
+    padding-right:25px;
+    text-align:center;
   }
   
 }
@@ -779,18 +777,32 @@ h1 {
   }
 }
 @media (max-width:1024px){
+  .arrow-container {
+    width: 150px;  /* Increased width */
+    height: 70px; /* Maintain 1:2 aspect ratio (height = width / 2) */
+  }
+  .about-icon-circle{
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 40px;
+    height:40px;
+  }
+  .about-icon-circle i {
+    font-size: 1rem;
+    color: #000;
+  }
   h1 {
     font-weight: bold;
     color: #333;
+    padding:0px;
   }
   .about p {
     line-height: 1.6;
     color: #555;
     text-align: justify;
-    font-size:13px;
+    font-size:0.9rem;
   }
   .about .img-fluid {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     border-radius: 35px;
   }
@@ -839,13 +851,13 @@ h1 {
     line-height: 1.5;
     color: #555;
     text-align: justify;
-    font-size:1rem;
+    font-size:0.75rem;
   }
   .about{
     border-radius:30px;
   }
   .about .img-fluid {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 20px;
   }
@@ -1176,10 +1188,10 @@ h1 {
   }
   .product-container .product-card p {
     margin: 5px 0;
-    font-size: 1rem !important;
+    font-size: 0.75rem !important;
   }
   .product-container .product-card span{
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .products p{
     font-size: 1rem !important;
@@ -1391,11 +1403,11 @@ h1 {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .overlay-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .features {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .water-machine {
@@ -1437,9 +1449,14 @@ h1 {
     flex: unset;
     width: 100%;
   }
-
+  .features li {
+    justify-content:center;
+    margin:0px;
+  }
   .right-content {
-    flex-direction: column;
+    flex-direction:row;
+    justify-content:center !important;
+    align-items: center !important;
   }
 
   .purifier-sec {
@@ -1545,9 +1562,9 @@ h1 {
   font-size: 10rem;
   font-weight: bolder;
   color: black;
-  position: absolute;
+  position:absolute;
+  z-index:1;
   top: 10px;
-  z-index: 1;
   opacity: 0.1;
 }
 
@@ -1677,15 +1694,30 @@ h1 {
 
 @media (max-width: 1024px) {
   .services-title {
-    font-size: 2.5rem;
+    font-size: 7rem;
     top: 5px;
-    left: 30px;
+    margin:0px;
   }
-
-  .services-description {
+  .services-description p {
     font-size: 1rem;
-    margin-left: 20px; 
-    margin-top:10px !important;
+    margin:0px !important;
+  }
+  .entire-service{
+    padding-top:10px;
+  }
+  .entire-service .service-des p {
+    font-size: 1rem;
+    margin:0px;
+  }
+  
+  .services-list  .service-icon  {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .services-list .icon-circle {
+    font-size: 1rem;
+    color: var(--std-color);
   }
 
   .services-list .service-des {
@@ -1698,7 +1730,7 @@ h1 {
   }
 
   .water-glass {
-    max-width: 100%;
+   width: 100% !important;
   }
   .services-list {
     list-style: none;
@@ -1747,19 +1779,33 @@ h1 {
     font-size: 2.5rem;
     top: 5px;
     text-align:center;
+    align-content:center;
     margin:0px;
   }
   .services-description {
     font-size: 1rem;
-    margin-top:10px !important;
     align-content:justify;
     text-align:center;
     margin-left:0px;
   }
-
-  .services-list .service-des {
+  .text-section{
+    top:0px;
+  }
+  .entire-service{
+    padding-top:10px;
+  }
+  .entire-service .service-des p {
     font-size: 1rem;
-    flex-wrap: wrap; 
+  }
+  
+  .services-list  .service-icon  {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .services-list .icon-circle {
+    font-size: 1rem;
+    color: var(--std-color);
   }
 
   .icon-circle {
@@ -1768,6 +1814,7 @@ h1 {
 
   .water-glass {
     max-width: 100%;
+    padding:0px !important;
   }
   .services-list {
     list-style: none;
@@ -1879,7 +1926,7 @@ h1 {
   }
 
   .bubble-icon {
-    max-width: 100px; /* Adjust bubble size */
+    max-width: 80px; /* Adjust bubble size */
   }
 
   .cta-title {
@@ -1888,6 +1935,9 @@ h1 {
 
   .btn-buy-now {
     font-size: 0.9rem;
+  }
+  br{
+    display:none;
   }
 }
 
@@ -2085,15 +2135,33 @@ h1 {
     flex-direction: row; /* Keep dots in a row */
   }
 }
+@media (max-width:1024px){
+    .clients-title {
+      font-size: 7rem;
+      top: 5px;
+    }
+    .section-description {
+      font-size:0.75rem;
+      width:100%;
+    }
+    .card-carousel {
+      flex-wrap: wrap;
+    }
+  
+    .card-carousel .card {
+      flex: 0 0 calc(50% - 20px); /* 2 cards per row */
+      margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 768px) {
   .clients-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding:0px;
   }
   .section-description {
-    font-size: 1rem;
+    font-size: 0.75rem;
     color:black;
     width:auto;
     margin:auto;
@@ -2109,11 +2177,17 @@ h1 {
   }
   .slick-dots {
     right: 180px; /* Adjust the position for smaller screens */
-    top: 105%; /* Adjust spacing for better alignment */
     flex-direction: row; /* Keep dots in a row */
   }
   .client-down{
     padding-top:0px !important;
+    padding-bottom:0px !important;
+  }
+  .client-down h3{
+    font-size:1rem !important;
+  }
+  .client-down p{
+    font-size:0.75rem !important;
   }
 
 }
@@ -2142,6 +2216,7 @@ h1 {
   }
   .client-down{
     padding-top:0px !important;
+    padding-bottom:0px !important;
   }
 }
 
@@ -2157,7 +2232,6 @@ h1 {
 .client-section-down{
   background-color: white;
   color:var(--std-color) !important;
-  
 }
 /*animations for client-down-section*/
 .animate__animated.animate__fadeInUp {

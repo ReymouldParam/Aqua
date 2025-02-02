@@ -98,7 +98,7 @@ body{
   .contact-btn {
     margin-top: 10px;
     margin-right: 0;
-    width: 100%;
+    width:auto;
   }
 }
 
@@ -191,6 +191,9 @@ body{
 
 /* Media Queries */
 @media (max-width: 1400px) {
+  body{
+    overflow-x:hidden;
+  }
   .padding-x {
     padding-left: 150px !important;
     padding-right: 150px !important;
@@ -206,6 +209,9 @@ body{
 }
 
 @media (max-width: 1200px) {
+  body{
+    overflow-x:hidden;
+  }
   .padding-x {
     padding-left: 140px !important;
     padding-right: 140px !important;
@@ -221,6 +227,9 @@ body{
 }
 
 @media (max-width: 1024px) {
+  body{
+    overflow-x:hidden;
+  }
   .navbar{
     width:100vw;
   }
@@ -236,9 +245,15 @@ body{
     margin-bottom:0px !important;
     white-space:nowrap;
   }
+  .feature-item p {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 992px) {
+  body{
+    overflow-x:hidden;
+  }
   .navbar{
     width:100vw;
   }
@@ -254,6 +269,9 @@ body{
     margin-bottom:0px !important;
     white-space:nowrap;
   }
+  .feature-item p {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -268,7 +286,7 @@ body{
     padding-right: 50px !important;
   }
   .display-1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .footer{
     gap:0px;
@@ -288,6 +306,9 @@ body{
   }
   .about-section{
     gap:20px;
+  }
+  .about-section .headings{
+    font-size:1rem;
   }
 }
 
