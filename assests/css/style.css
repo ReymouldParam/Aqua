@@ -472,7 +472,7 @@
 .slick-carousel .slide-2,
 .slick-carousel .slide-3,
 .slick-carousel .slide-4 {
-  width: 80% !important;
+  width: 50% !important;
   height: 25vh;
 }
   .main-page-cards .card {
@@ -593,7 +593,7 @@
 .slick-carousel .slide-2,
 .slick-carousel .slide-3,
 .slick-carousel .slide-4 {
-  width: 80% !important;
+  width: 50% !important;
   height: 25vh;
 }
 
