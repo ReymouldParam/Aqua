@@ -310,6 +310,10 @@ body{
   .about-section .headings{
     font-size:1rem;
   }
+  .line{
+     margin:0px;
+  }
+   
 }
 
 @media (max-width: 576px) {
@@ -329,7 +333,6 @@ body{
   }
   .display-1 {
     font-size: 3rem;
-    padding:0px;
   }
   .section-1 p{
     align-content: justify;
@@ -337,6 +340,9 @@ body{
   .about-section{
     gap:20px;
   }
+  .line{
+    margin:0px;
+ }
 }
 
 @media (max-width: 480px) {
