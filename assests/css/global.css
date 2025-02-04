@@ -340,9 +340,9 @@ body{
   .about-section{
     gap:20px;
   }
-  .line{
-    margin:0px;
- }
+    .line{
+     margin:0px;
+  }
 }
 
 @media (max-width: 480px) {
