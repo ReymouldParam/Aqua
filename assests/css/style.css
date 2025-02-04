@@ -1066,7 +1066,7 @@ h1 {
 /*end*/
 /*products*/
 .products-overall {
-  background-color: #DAF2FF;
+  background-color: var(--primary-color);
   border-top-left-radius: 70px; 
   border-top-right-radius: 70px;
   padding-top:120px;
@@ -1624,7 +1624,7 @@ h1 {
 }
 
 .services-description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   margin-bottom:0px;
 }
@@ -1913,7 +1913,7 @@ h1 {
 }
 
 .section-des {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   line-height: 1.5;
   text-align: center;

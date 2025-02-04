@@ -62,7 +62,7 @@
       <div class="left-section">
           <div class="about-row">
               <h1 class="heading about-text">ABOUT</h1>
-              <img src="/assests/images/about-section1-img1.png" class="img-fluid image-1">
+              <img src="/assests/images/water png 2.png" class="img-fluid image-1">
           </div>
           <div class="us-row">
               <h1 class="heading">US</h1>
@@ -79,6 +79,25 @@
           </p>
           <button class="btn explore-btn"><a href="#" class="text-decoration-none">Explore Product</a></button>
       </div>
+  </div>
+  <div class="mobile-view">
+    <h1 class="heading about-text">ABOUT US</h1>
+    <div class="left-section">
+         <div class="mobile-images">
+             <img src="/assests/images/water png 2.png" class="img-fluid image-1">
+             <img src="/assests/images/about-section1-img2.png" class="img-fluid image-2">
+         </div>
+    </div>
+    <div class="right-section">
+      <h3 class="welcome-text">Welcome To Aqua Tech</h3>
+      <p>The first step is to draw the water into the device using gravity. Once the water is inside, 
+          it passes through a series of filters. These filters remove impurities such as dirt, dust, and bacteria. 
+          The final step is to pass the filtered water through a UV light or ozone generator, which kills any remaining bacteria. 
+          Kent RO impresses with its innovation and versatile range, while Pureit RO stands out for its commitment to safety and effectiveness. 
+          The choice between them depends on individual preferences, budget constraints, and specific needs.
+      </p>
+      <button class="btn explore-btn"><a href="#" class="text-decoration-none">Explore Product</a></button>
+   </div>
   </div>
 </div>
 
@@ -128,7 +147,6 @@
   <div class="left-side">
       <div class="image-container">
           <img src="/assests/images/main1.png" class="purifier-img" id="purifier-img">
-          
           <!-- Hexagon Container (Inside image-container) -->
           <div class="hexagon-container" id="hexagon-container">
               <!-- Left Side Hexagons -->
@@ -185,7 +203,7 @@
 
 
 <!--footer-->
- <header class="header position-absolute start-50 top-90 translate-middle padding-x">
+  <header class="header position-absolute start-50 top-90 translate-middle padding-x">
     <div class="row text-center">
       <div class="col-6 col-md-3">
         <div class="feature-item">
@@ -262,6 +280,7 @@
 </section>
 
 <!--scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
 // Get references to elements
 const purifierImg = document.getElementById("purifier-img");
@@ -293,12 +312,12 @@ function togglePurifierMovement() {
         hex6.style.transform = 'translateY(0)';
     } else {
         // Hexagons should hide completely off-screen in different directions
-        hex1.style.transform = 'translateY(-100%)'; // Hex 1 moves up
-        hex2.style.transform = 'translateX(-100%)'; // Hex 2 moves left
-        hex3.style.transform = 'translateY(100%)'; // Hex 3 moves down
-        hex4.style.transform = 'translateY(-100%)'; // Hex 4 moves up
-        hex5.style.transform = 'translateX(100%)'; // Hex 5 moves right
-        hex6.style.transform = 'translateY(100%)'; // Hex 6 moves down
+        hex1.style.transform = 'translateY(-150%)'; // Hex 1 moves up
+        hex2.style.transform = 'translateX(-150%)'; // Hex 2 moves left
+        hex3.style.transform = 'translateY(150%)'; // Hex 3 moves down
+        hex4.style.transform = 'translateY(-150%)'; // Hex 4 moves up
+        hex5.style.transform = 'translateX(150%)'; // Hex 5 moves right
+        hex6.style.transform = 'translateY(150%)'; // Hex 6 moves down
     }
 }
 

@@ -136,7 +136,6 @@ body{
 .hero h1 {
   font-size: 4rem;
 }
-
 /* About & Contact Section */
 
 .about-contact {
@@ -287,6 +286,7 @@ body{
   }
   .display-1 {
     font-size: 5rem;
+    margin-top:50px;
   }
   .footer{
     gap:0px;
@@ -333,6 +333,7 @@ body{
   }
   .display-1 {
     font-size: 3rem;
+    margin-top:30px;
   }
   .section-1 p{
     align-content: justify;

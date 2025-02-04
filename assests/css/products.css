@@ -1,0 +1,52 @@
+:root{
+    --primary-color:#c6e8ff;
+    --secondary-color: #F7F7F7;
+    --std-color:#0A5B9C;
+    --std-color2:#eef7fd;
+    --std-padding:0px 30px;
+}
+.products-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    background-color: var(--std-color2); /* Light blue background */
+}
+
+.subsec-1 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 100%;
+    max-width: 1200px; /* Adjust width */
+    gap: 100px; /* Adds space between 'Products' and 'Certified By' */
+}
+
+.products-heading {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #0055A4;
+    margin: 0;
+    white-space: nowrap; /* Prevents line break */
+}
+
+.right-des {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; /* Pushes 'Certified By' text away from 'Products' */
+}
+
+.certified-text {
+    color: skyblue;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.iso-text {
+    color: var(--std-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
+}
