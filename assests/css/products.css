@@ -6,11 +6,7 @@
     --std-padding:0px 30px;
 }
 .products-section1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 100px;
+    padding-top: 100px;
     background-color: var(--std-color2); /* Light blue background */
 }
 
@@ -50,3 +46,262 @@
     font-weight: 600;
     margin: 0;
 }
+/*responsive*/
+/*styles for subsec-2*/
+.subsec-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px 15px 0 0; /* Rounded top corners only */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for bottom line */
+}
+
+.subsec-2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the bottom line */
+    background-color: #ccc; /* Light gray color for bottom line */
+}
+
+.subsec-2 a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* Ensures spacing above the bottom line */
+}
+
+.subsec-2 a.active-link {
+    color:var(--std-color); /* Blue color for the active link */
+}
+
+.subsec-2 a:hover {
+    color: var(--std-color); /* Slightly darker blue on hover */
+}
+/*responsive*/
+/*subsec-3*/
+.subsec-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Wrapper for each card and button */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px; /* Increased width */
+}
+
+/* Individual card styling */
+.card {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border:none;
+}
+.card:hover{
+    box-shadow: 4px 4px 10px #8fc6e0;;
+}
+
+/* Bestseller tag */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFA500;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Image styling - Reduced height */
+.card img {
+    width: 100%;
+    height: 180px; /* Reduced height */
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.mineral {
+    color: orange;
+    font-weight: bold;
+}
+
+.ro {
+    color: green;
+    font-weight: bold;
+}
+
+.copper {
+    color: var(--std-color);
+    font-weight: bold;
+}
+
+/* Know More Button - Placed outside the card */
+.know-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    border: 2px solid var(--std-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+.know-more:hover {
+    background:var(--std-color);
+    color: white;
+    box-shadow: 3px 3px 3px 3px var(--primary-color);
+}
+/*responsive*/
+
+/*productssection-2*/
+.products-section2 {
+    background:radial-gradient(#FFFFFF,#D3DEF0); /* Light blue background */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* Left-side image */
+.purifier {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right-side text section */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Heading */
+.text-section h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Filter details */
+.text-section p {
+    font-size: 25px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.mineral {
+    color: orange;
+    font-weight: bold;
+}
+
+.ro {
+    color: green;
+    font-weight: bold;
+}
+
+.copper {
+    color: var(--std-color);
+    font-weight: bold;
+}
+
+/* Features container */
+.features-container {
+    margin-top: 20px;
+    padding: 30px;
+    border: 3px solid var(--std-color); /* Blue border */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icons section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: -150px;
+}
+
+/* Individual feature */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+/* Feature images (Circular icons) */
+.feature img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature text */
+.feature p {
+    font-size: 12px;
+    margin-top: 5px;
+    color:var(--std-color);
+    font-weight: bold;
+}
+
+
+

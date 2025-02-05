@@ -490,6 +490,9 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .second-section{
+        padding-top:0px;
+    }
     .main-heading {
         font-size: 2rem;
     }
