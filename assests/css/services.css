@@ -1,0 +1,329 @@
+:root{
+    --primary-color:#c6e8ff;
+    --secondary-color: #F7F7F7;
+    --std-color:#0A5B9C;
+    --std-color2:#eef7fd;
+    --std-padding:0px 30px;
+}
+
+        .service-sections {
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom:20px;
+            background-color:var(--std-color2);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .service-sec1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:60px;
+        }
+
+        .sec1-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec1-left h1 {
+            font-size: 5rem;
+            font-weight: bolder;
+            color:var(--std-color)
+        }
+
+        .service-sec1-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-left:50px;
+            margin-top:-55px;  
+            animation: slideInTop 1s ease-in-out forwards;
+        }
+
+        .sec1-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+            animation: slideInRight 1s ease-in-out forwards;
+        }
+
+        .sec1-right h3 {
+            font-size:1rem;
+            color: var(--std-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .sec1-right p {
+            font-size:1.1rem;
+            color: #555;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        /*animations*/
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideInTop {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .service-sections {
+                padding: 40px 5%;
+            }
+
+            .service-sec1 {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .sec1-right {
+                align-items: center;
+            }
+
+            .sec1-right p {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-sections {
+                padding: 30px 5%;
+            }
+
+            .sec1-left h1 {
+                font-size: 28px;
+            }
+
+            .sec1-right h3 {
+                font-size: 24px;
+            }
+
+            .sec1-right p {
+                font-size: 14px;
+            }
+        }
+/*responsive*/
+/*servicesec2*/
+.service-sec2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.service-sec2 .heading-text {
+    font-size:3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Flexbox Grid */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    min-width: 320px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 0px rgba(10, 91, 156, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card1 img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.service-sec2 .card1 h1 {
+    font-size:1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight:600;
+}
+
+.card1 p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+}
+/*animations*/
+.top-anime{
+    animation: slideInTop 1s ease-in-out forwards;
+}
+.left-anime{
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+.right-anime{
+    animation: slideInRight 1s ease-in-out forwards;
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 80%;
+    }
+}
+/*responsive*/
+/*service-sec3*/
+.service-sec3 {
+    text-align: center;
+    padding:15px;
+}
+.service-sec3 h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.glasses-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.left-glass,
+.right-glass {
+    max-width: 250px;
+    height: auto;
+}
+
+.bubble-flow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:-100px;
+}
+
+.bubbles-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bubble-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble-icon {
+    max-width: 130px;
+    height: auto;
+}
+
+.service-sec3 p {
+    font-size:1.1rem;
+    text-align: center;
+    padding-bottom:40px;
+}
+
+.flow-image img {
+    max-width: 100%;
+}
+/*animations of bubbles*/
+.bubble-item {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .bubble-item:nth-child(odd) {
+    animation-duration: 2s;
+  }
+  
+  .bubble-item:nth-child(even) {
+    animation-duration: 2s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px); /* Moves the bubble upward */
+    }
+    100% {
+      transform: translateY(0); /* Returns to original position */
+    }
+  }
+
