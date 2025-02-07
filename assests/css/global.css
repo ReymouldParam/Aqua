@@ -96,9 +96,11 @@ body{
   }
 
   .contact-btn {
-    margin-top: 10px;
-    margin-right: 0;
-    width:auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    margin: 10px auto; /* Auto margins for centering */
+    width: fit-content; /* Prevent full width */
   }
 }
 
@@ -170,6 +172,9 @@ body{
   background-color:rgba(173, 178, 178, 0.493);
   border:1px solid white;
   border-radius: 15px !important;
+}
+.contact-form button:hover{
+  background-color:var(--std-color);
 }
 .display-1 {
   font-size: 15rem;

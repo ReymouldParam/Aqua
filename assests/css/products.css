@@ -278,6 +278,7 @@
     max-width: 1400px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Close button */
@@ -313,7 +314,7 @@
     position: absolute;
     width: 420px;
     height: 420px;
-    background: linear-gradient(to right, #DAF2FF 50%, #FFFFFF 50%);
+    background: linear-gradient(to right,#DAF2FF, #FFFFFF);
     border-radius: 50% 50% 0 0;
     z-index: 1;
     left:0px;
@@ -429,6 +430,10 @@
     .left-image {
         margin-bottom: 20px;
     }
+    .image-border {
+        width: 350px;
+        height: 350px;
+    }
 
     .right-features {
         flex-direction: row; /* Ensures row alignment even in mobile */
@@ -450,6 +455,10 @@
     .description {
         font-size: 14px;
     }
+    .image-border {
+        width: 300px;
+        height: 300px;
+    }
 
     .pop-feature p {
         font-size: 12px;
@@ -469,6 +478,9 @@
 
     .popup-title {
         font-size: 24px;
+    }
+    .image-border {
+       display:none;
     }
 
     .description {
@@ -490,9 +502,6 @@
         font-size: 30px;
     }
 }
-
-
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -500,6 +509,12 @@
     gap: 20px;
     max-width: 1200px;
     
+}
+.category2{
+    display:none;
+}
+.category3{
+    display:none;
 }
 
 /* Wrapper for each card and button */

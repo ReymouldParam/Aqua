@@ -51,7 +51,7 @@
             <a class="nav-link" href="services.html">SERVICES</a>
           </li>
         </ul>
-        <button class="btn contact-btn"><a href="" class="text-decoration-none text-black">Contact Us</a></button>
+        <button class="btn contact-btn"><a href="contact.html" class="text-decoration-none text-black">Contact Us</a></button>
       </div>
     </div>
   </nav>
@@ -191,12 +191,12 @@
       <div class="products overall container-fluid">
         <h1>Products</h1>
         <p class="products-down">
-          <span><a href="" class="text-decoration-none fw-bold active ">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Bestseller</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Most Featured</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
-          <span><a href="" class="text-decoration-none text-black fw-bold"> Special</a></span>
+          <span><a href="" class="text-decoration-none fw-bold active" data-category="category1">New Arrival</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold" data-category="category2"> Bestseller</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold" data-category="category3"> Most Featured</a></span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+          <span><a href="" class="text-decoration-none text-black fw-bold" data-category="category4"> Special</a></span>
         </p>
-        <div class="product-container">
+        <div class="product-container" data-category="category1" >
           <div class="card product-card">
             <div class="bestseller">Bestseller</div>
             <img src="/assests/images/product1.png" alt="Activated Carbon Filter">
@@ -235,9 +235,53 @@
               <span class="text-primary">Active Copper</span>
             </p>
           </div>
+        </div>
+        <div class="product-container" data-category="category2" >
           <div class="card product-card">
-            <img src="/assests/images/product1.png" alt="Alkaline Filter">
-            <p>Alkaline Filter</p>
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product1.png" alt="Activated Carbon Filter">
+            <p>Activated Carbon Filter</p>
+            <p>
+            <span class="text-warning">Mineral</span> | 
+            <span class="text-success"> RO+UV+UF+MC</span> | 
+            <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product2.png" alt="Sediment Filter">
+            <p>Sediment Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+        </div>
+        <div class="product-container" data-category="category3" >
+          <div class="card product-card">
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product1.png" alt="Activated Carbon Filter">
+            <p>Activated Carbon Filter</p>
+            <p>
+            <span class="text-warning">Mineral</span> | 
+            <span class="text-success"> RO+UV+UF+MC</span> | 
+            <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product2.png" alt="Sediment Filter">
+            <p>Sediment Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <img src="/assests/images/product3.png" alt="Ultraviolet (UV) Filter">
+            <p>Ultraviolet (UV) Filter</p>
             <p>
               <span class="text-warning">Mineral</span> | 
               <span class="text-success"> RO+UV+UF+MC</span> | 
@@ -254,7 +298,47 @@
             </p>
           </div>
         </div>
-        <button class="btn btn-view">View All</button>
+        <div class="product-container" data-category="category4" >
+          <div class="card product-card">
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product1.png" alt="Activated Carbon Filter">
+            <p>Activated Carbon Filter</p>
+            <p>
+            <span class="text-warning">Mineral</span> | 
+            <span class="text-success"> RO+UV+UF+MC</span> | 
+            <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <div class="bestseller">Bestseller</div>
+            <img src="/assests/images/product2.png" alt="Sediment Filter">
+            <p>Sediment Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <img src="/assests/images/product3.png" alt="Ultraviolet (UV) Filter">
+            <p>Ultraviolet (UV) Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+          <div class="card product-card">
+            <img src="/assests/images/product1.png" alt="Alkaline Filter">
+            <p>Alkaline Filter</p>
+            <p>
+              <span class="text-warning">Mineral</span> | 
+              <span class="text-success"> RO+UV+UF+MC</span> | 
+              <span class="text-primary">Active Copper</span>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-view"><a href="products.html" class="view text-decoration-none text-black">View All</a></button>
       </div>
     </div>
   </div>
@@ -317,7 +401,7 @@
               </div>
             </div>
             <div class="icon-circle">
-              <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
+              <a href="services.html"><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
             </div>
          </div>
          <div class="entire-service">
@@ -330,7 +414,7 @@
             </div>
           </div>
           <div class="icon-circle">
-            <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
+            <a href="services.html"><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
           </div>
        </div>
        <div class="entire-service">
@@ -343,7 +427,7 @@
           </div>
         </div>
         <div class="icon-circle">
-          <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
+          <a href="services.html"><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
         </div>
      </div>
      <div class="entire-service">
@@ -356,7 +440,7 @@
         </div>
       </div>
       <div class="icon-circle">
-        <a href=""><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
+        <a href="services.html"><i class="fa-solid fa-arrow-right-long fa-xs"></i></a>
       </div>
       </div>
           
@@ -409,7 +493,7 @@
         <img src="/assests/images/bottom-banner-water-purification 1.png" class="img-fluid">
       </div>
     <h3 class="cta-title pt-5">Ready to Experience Pure Water Filtration</h3>
-    <button class="btn btn-buy-now">Buy Now</button>
+    <button class="btn btn-buy-now"><a href="products.html" class="buy text-decoration-none text-black">Buy Now</a></button>
     </div>
   </div>
 </div>
@@ -540,8 +624,8 @@
             <div class="section-2">
               <address class="mt-4">
                 <p class="text-white headings">Corporate Office</strong></p>
-                <p class="text-white"><span><i class="fa-solid fa-location-dot fa-xl"></i></span>&nbsp;&nbsp;Tirifigu 260 Chapman Road, Suite 201 C<br>Newark, DE 19702</p>
-                <p class="text-white"><span><i class="fa-solid fa-phone fa-xl"></i></span>&nbsp;&nbsp;Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: info@company.com</p>
+                <p class="text-white"><span><i class="fa-solid fa-location-dot fa-xl"></i></span>&nbsp;&nbsp;5-2-224/425, 3, Street Number 8, Hyder Basti,<br> Hyderbasthi, Rani Gunj, Secunderabad, Telangana 500003</p>
+                <p class="text-white"><span><i class="fa-solid fa-phone fa-xl"></i></span>&nbsp;&nbsp;Phone: 040 4857 5793<br>Fax: (302) 533 2406<br>Email: info@company.com</p>
               </address>
               <div class="social-icons mt-3">
                 <a href="#" class="me-3"><i class="fab fa-facebook fa-2xl"></i></a>
@@ -622,33 +706,6 @@
       arrows: false,
       dots: false,
     });
-
-    /*products-carousel*/
-  $(document).ready(function(){
-  $('.product-container').slick({
-    slidesToShow: 4, /* Show 3 products on larger screens */
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 1024, /* Tablets */
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768, /* Mobile screens */
-        settings: {
-          slidesToShow: 1,
-          arrows: false
-        }
-      }
-    ]
-  });
-});
 /*card-fade-carousel*/
 
 $('.card-fade-carousel').slick({
@@ -669,6 +726,51 @@ $('.text-carousel').slick({
   autoplay:2000,
   cssEase: 'linear'
 });
+
+/*filter the products according to category  */
+document.addEventListener("DOMContentLoaded", function () {
+    const categoryLinks = document.querySelectorAll(".products-down a");
+    const productContainers = document.querySelectorAll(".product-container");
+
+    categoryLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Remove 'active' class from all links
+            categoryLinks.forEach(l => l.classList.remove("active", "text-black"));
+            
+            // Add 'active' class to clicked link
+            this.classList.add("active");
+            this.classList.remove("text-black");
+
+            // Get selected category
+            const selectedCategory = this.getAttribute("data-category");
+
+            // Hide all product containers
+            productContainers.forEach(container => {
+                if (container.getAttribute("data-category") === selectedCategory) {
+                    container.style.display = "flex";
+                } else {
+                    container.style.display = "none";
+                }
+            });
+        });
+    });
+
+    // Show only the default active category on page load
+    const defaultCategory = document.querySelector(".products-down a.active");
+    if (defaultCategory) {
+        const selectedCategory = defaultCategory.getAttribute("data-category");
+        productContainers.forEach(container => {
+            if (container.getAttribute("data-category") === selectedCategory) {
+                container.style.display = "flex";
+            } else {
+                container.style.display = "none";
+            }
+        });
+    }
+});
+
 </script>
   
 </body>
