@@ -6,7 +6,8 @@
 }
 /*section-1*/
 .Aboutsection-1 {
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom:60px;
     background-color: #eef7fd;
 }
 
@@ -21,7 +22,7 @@
 .outer-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
@@ -174,16 +175,17 @@
 @media screen and (max-width: 1200px) {
     .outer-container {
         flex-direction: row; /* Ensure row layout */
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        gap:50px;
     }
     .about-row, .us-row {
         gap: 80px;
         flex-direction: row; /* Ensure row layout */
     }
     .image-1, .image-2 {
-        width: 280px;
-        height: 320px;
+        width: 250px;
+        height: 300px;
     }
     .right-section {
         max-width: 380px;
@@ -639,7 +641,7 @@
 /* Left Side Hexagons */
 .hex1 { top: 5%; left: 15%; }
 .hex2 { top: 35%; left: 5%; }
-.hex3 { bottom: 10%; left: 5%; }
+.hex3 { bottom: 10%; left: 7%; }
 
 /* Right Side Hexagons */
 .hex4 { top: 5%; right: 15%; }

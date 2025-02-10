@@ -143,7 +143,7 @@
     </div>
 </div>
 <!---section-3-->
-<div class="section-3">
+<div class="section-3 padding-x">
   <div class="left-side">
       <div class="image-container">
           <img src="/assests/images/main1.png" class="purifier-img" id="purifier-img">
@@ -238,16 +238,16 @@
             <div class="section-1">
               <h2 class="mb-3 text-white headings">About</h2>
               <p class="text-white">
-              Take your apps up a notch with us. App <br>development and integration involve creating<br> software applications for various platforms like <br>mobile, web, or desktop, and integrating them.</p>
+                Tirupati Aqua Tech is a water treatment plant equipment dealer and repair service provider in Secunderabad, Telangana.<br>They also offer repair and maintenance services for a variety of electronics. 
             </div>
             <div class="section-2">
               <address class="mt-4">
-                <p class="text-white headings">Corporate Office</strong></p>
-                <p class="text-white"><span><i class="fa-solid fa-location-dot fa-xl"></i></span>&nbsp;&nbsp;Tirifigu 260 Chapman Road, Suite 201 C<br>Newark, DE 19702</p>
-                <p class="text-white"><span><i class="fa-solid fa-phone fa-xl"></i></span>&nbsp;&nbsp;Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: info@company.com</p>
+                <h2 class="text-white headings">Office</strong></h2>
+                <p class="text-white"><span><i class="fa-solid fa-location-dot fa-xl"></i></span>&nbsp;&nbsp;5-2-224/425, 3, Street Number 8, Hyder Basti,<br> Hyderbasthi, Rani Gunj, Secunderabad, Telangana 500003</p>
+                <p class="text-white"><span><i class="fa-solid fa-phone fa-xl"></i></span>&nbsp;&nbsp;Phone: 040 4857 5793<br>Fax: (302) 533 2406<br>Email:tirupatiaquatech@yahoo.com</p>
               </address>
               <div class="social-icons mt-3">
-                <a href="#" class="me-3"><i class="fab fa-facebook fa-2xl"></i></a>
+                <a href="https://www.facebook.com/p/Tirupati-Aqua-Tech-100066884628022/" class="me-3"><i class="fab fa-facebook fa-2xl"></i></a>
                 <a href="#" class="me-3"><i class="fab fa-instagram fa-2xl"></i></a>
                 <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
               </div>
@@ -282,50 +282,45 @@
 <!--scripts-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-// Get references to elements
-const purifierImg = document.getElementById("purifier-img");
-const hexagonContainer = document.getElementById("hexagon-container");
-const hex1 = document.querySelector('.hex1');
-const hex2 = document.querySelector('.hex2');
-const hex3 = document.querySelector('.hex3');
-const hex4 = document.querySelector('.hex4');
-const hex5 = document.querySelector('.hex5');
-const hex6 = document.querySelector('.hex6');
+document.addEventListener("DOMContentLoaded", () => {
+    const purifierImg = document.getElementById("purifier-img");
+    const hex1 = document.querySelector('.hex1');
+    const hex2 = document.querySelector('.hex2');
+    const hex3 = document.querySelector('.hex3');
+    const hex4 = document.querySelector('.hex4');
+    const hex5 = document.querySelector('.hex5');
+    const hex6 = document.querySelector('.hex6');
 
-// Function to move the purifier image and slide hexagons from the sides
-function togglePurifierMovement() {
-    const purifierPosition = purifierImg.style.transform === 'translateY(-50px)' ? 'translateY(0)' : 'translateY(-50px)';
-    
-    // Check if purifier is moving up or down and set corresponding hexagon movement
-    const hexagonTranslateY = purifierPosition === 'translateY(0)' ? 'translateY(0)' : 'translateY(100%)'; // Hide hexagons when purifier moves up
-    
-    // Move the purifier image
-    purifierImg.style.transform = purifierPosition;
+    function animateOnce() {
+        // Move the purifier up
+        purifierImg.style.transform = 'translateY(-50px)';
+        
+        // Move hexagons into view
+        hex1.style.transform = 'translateY(-150px)';
+        hex2.style.transform = 'translateX(-150px)';
+        hex3.style.transform = 'translateY(200px)';
+        hex4.style.transform = 'translateY(-150px)';
+        hex5.style.transform = 'translateX(150px)';
+        hex6.style.transform = 'translateY(200px)';
 
-    if (purifierPosition === 'translateY(0)') {
-        // Hexagons should slide in from different directions based on their position
-        hex1.style.transform = 'translateY(0)';
-        hex2.style.transform = 'translateX(0)';
-        hex3.style.transform = 'translateY(0)';
-        hex4.style.transform = 'translateY(0)';
-        hex5.style.transform = 'translateX(0)';
-        hex6.style.transform = 'translateY(0)';
-    } else {
-        // Hexagons should hide completely off-screen in different directions
-        hex1.style.transform = 'translateY(-150%)'; // Hex 1 moves up
-        hex2.style.transform = 'translateX(-150%)'; // Hex 2 moves left
-        hex3.style.transform = 'translateY(150%)'; // Hex 3 moves down
-        hex4.style.transform = 'translateY(-150%)'; // Hex 4 moves up
-        hex5.style.transform = 'translateX(150%)'; // Hex 5 moves right
-        hex6.style.transform = 'translateY(150%)'; // Hex 6 moves down
+        // After animation completes, reset to final position
+        setTimeout(() => {
+            purifierImg.style.transform = 'translateY(0)'; // Final position
+            
+            // Ensure hexagons are in their final place
+            hex1.style.transform = 'translateY(0)';
+            hex2.style.transform = 'translateX(0)';
+            hex3.style.transform = 'translateY(0)';
+            hex4.style.transform = 'translateY(0)';
+            hex5.style.transform = 'translateX(0)';
+            hex6.style.transform = 'translateY(0)';
+        }, 2000); // This should match your CSS transition duration
     }
-}
 
-// Example to trigger movement when needed (e.g., on button click or scroll)
-document.addEventListener("click", togglePurifierMovement);  // Trigger movement on click
+    // Run animation once when the page loads
+    setTimeout(animateOnce, 500); // Delays start for better effect
+});
 
-// Or you can use setInterval to animate it up and down (optional)
-setInterval(togglePurifierMovement, 2000); // Moves every 3 seconds
 
 
 </script>

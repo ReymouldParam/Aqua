@@ -416,7 +416,7 @@
 
 .left-glass,
 .right-glass {
-    max-width: 250px;
+    max-width: 150px;
     height: auto;
 }
 
@@ -530,13 +530,12 @@
 
 @media (max-width: 1024px) {
     .glasses-section {
-        flex-wrap: wrap;
         gap: 15px;
     }
 
     .left-glass,
     .right-glass {
-        max-width: 180px;
+        max-width: 120px;
     }
 
     .bubble-icon {
