@@ -121,6 +121,7 @@
   text-align: left;
   position: relative;
   border:2px solid white;
+  z-index:1;
 }
 
 .know-more {
@@ -220,7 +221,7 @@
   gap: 180px;
   width: 100%;
   max-width: 1200px; /* Prevents stretching on larger screens */
-  z-index: 1;
+  z-index:0;
 }
 
 .vector-1 img,
@@ -266,16 +267,206 @@
   font-weight: bold;
   color:var(--std-color);
 }
-
-
-/* Responsive Adjustments */
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
+  .purifier-container {
+    max-width: 1200px;
+  }
+
+  .purifier-gif {
+    max-width: 60%;
+  }
+
   .entire-container {
-      width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+  }
+
+  .vectors {
+    gap: 180px;
+  }
+
+  .vector-1 img, .vector-2 img {
+    width: 200px;
+  }
+
+  .bottom-card {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main-page {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .purifier-container {
+    padding: 10px;
+  }
+
+  .purifier-gif {
+    max-width: 75%;
+  }
+
+  .purifier-gif .purifier-text {
+    font-size: 3rem;
+    top: -40px;
+  }
+
+  .under-text {
+    font-size: 1rem;
+    top: 85%;
+  }
+
+  /* Ensure row layout remains */
+  .entire-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* Adjust left and right card sizes */
+  .right-card .card {
+    width: 280px !important;
+  }
+  .main-page-cards .card{
+    width: 230px !important;
+  }
+  .left-card{
+   width: 300px;
+  }
+  .info-card{
+     width:250px;
+     margin-top:50px;
+     margin-left:-120px !important;
+  }
+
+  .carousel {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-carousel {
+    max-width: 450px;
+  }
+
+  .vectors {
+    top: 45vh;
+    gap: 150px;
+  }
+
+  .vector-1 img, .vector-2 img {
+    width: 170px;
+  }
+
+  .bottom-card {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -120px;
+  }
+
+  .bottom-card .card .btn {
+    font-size: 0.9rem;
+  }
+
+  .bottom-card .card2 {
+    right: 0;
+  }
+}
+/*****/
+/* Styles for screens up to 1200px */
+@media screen and (max-width: 1200px) {
+  .main-page {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .purifier-container {
+    padding: 8px;
+  }
+
+  .purifier-gif {
+    max-width: 70%;
+  }
+
+  .purifier-gif .purifier-text {
+    font-size: 2.5rem;
+    top: -35px;
+  }
+
+  .under-text {
+    font-size: 0.9rem;
+    top: 82%;
+  }
+
+  .entire-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .right-card .card {
+    width: 250px !important;
+  }
+  .main-page-cards .card {
+    width: 210px !important;
+  }
+  .left-card {
+    width: 270px;
+  }
+  .info-card {
+    width: 200px;
+    margin-top: 40px;
+    margin-left:0px !important;
+  }
+
+  .carousel {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-carousel {
+    max-width: 400px;
+  }
+
+  .vectors {
+    top: 55vh;
+    gap: 130px;
+  }
+
+  .vector-1 img, .vector-2 img {
+    width: 150px;
+  }
+
+  .bottom-card {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -100px;
+  }
+
+  .bottom-card .card .btn {
+    font-size: 0.85rem;
+  }
+
+  .bottom-card .card2 {
+    right: 0;
   }
 }
 
+/* Styles for screens up to 1024px */
 @media (max-width: 1024px) {
   .main-page{
     height:100vh;
@@ -286,8 +477,8 @@
       text-align: center;
   }
   .left-card {
-    max-width: 250px; /* Adjusted width */
-    margin-left:0px;
+    max-width: 200px; /* Adjusted width */
+    margin-left:0px !important;
 
   }
   .know-more {
@@ -335,7 +526,7 @@
     height: auto;
   }
   .vectors {
-    top: 45vh;
+    top: 55vh;
     gap: 150px;
   }
 
@@ -351,8 +542,8 @@
     font-size:0.5rem;
   }
   .bottom-card .card2{
-    top:-30px;
-    right:0px;
+    top:-20px;
+    right:-10px;
   }
   .bottom-card .p2{
     font-size: 0.75rem;
@@ -362,6 +553,119 @@
     font-weight: bold;
   }
 }
+@media (max-width: 992px) {
+  .main-page {
+    height:50vh;
+  }
+
+  .entire-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .purifier-gif .purifier-img{
+    margin-top:50px;
+  }
+  .under-text{
+    margin-top:10px;
+  }
+  .left-card {
+    width: 150px; /* Adjusted width */
+    margin-left: 0px !important;
+  }
+ .info-card{
+  width:150px;
+ }
+  .know-more {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+
+  .know-more h3 {
+    font-size: 0.8rem;
+  }
+
+  .info-card p {
+    font-size: 0.45rem;
+  }
+
+  .right-card {
+    flex: 1;
+    max-width: 180px; /* Adjusted width */
+    padding: 8px;
+    border-radius: 12px;
+    margin-top: -130px;
+  }
+
+  .right-card .card {
+    width:100px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  .main-page-cards .card{
+    max-width:180px;
+  }
+
+  .card-fade-carousel img {
+    border-radius: 8px;
+    background-color: var(--std-color);
+    max-width: 180px;
+  }
+
+  .text-carousel p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .slick-carousel {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .vectors {
+    top: 50vh;
+    gap: 130px;
+  }
+
+  .vector-1 img,
+  .vector-2 img {
+    width: 200px;
+  }
+
+  .bottom-card {
+    width:250px;
+    margin-top: -120px;
+    margin-left: 400px;
+    padding:0px !important;
+  }
+
+  .bottom-card .card .btn {
+    font-size: 0.45rem;
+  }
+
+  .bottom-card .card2 {
+    top: -15px;
+    right: -8px;
+  }
+
+  .bottom-card .p2 {
+    font-size: 0.7rem;
+  }
+
+  .shop-now p {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+}
+
 
 @media (max-width: 768px) {
   .main-page{
@@ -398,6 +702,7 @@
 }
   .info-card, .card {
       padding: 15px;
+      margin-left:0px !important;
   }
 
   .know-more h3 {
@@ -680,6 +985,10 @@ h1 {
   h1 {
     font-weight: bold;
     color: #333;
+    padding-bottom:0px;
+  }
+  .py-5{
+    padding-top:2rem !important;
   }
   .about p {
     line-height: 1.6;
@@ -1073,15 +1382,96 @@ h1 {
 }
 
 /* Responsive Design */
-@media (min-width:1550px){
-  .product-container .product-card p {
-    margin: 5px 0;
-    font-size: 1rem !important;
+/* Styles for screens up to 1400px */
+@media screen and (max-width: 1400px) {
+  .products-overall {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 100px;
   }
-  .product-container .product-card span{
-    font-size: 0.75rem;
+
+  .products h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-container {
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust spacing */
+  }
+
+  .product-container .product-card {
+    width: 220px;
+    padding: 15px 25px;
+  }
+
+  .bestseller {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .product-container .product-card p {
+    font-size: 0.7rem !important;
+  }
+
+  .product-container .product-card span {
+    font-size: 0.45rem;
+  }
+
+  .product-card p:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+
+  .btn-view {
+    padding: 8px 30px;
+    font-size: 0.9rem;
   }
 }
+
+/* Styles for screens larger than 1400px */
+@media screen and (min-width: 1400px) {
+  .products-overall {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    padding-top: 120px;
+  }
+
+  .products h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product-container .product-card {
+    width: 260px;
+    padding: 25px 40px;
+  }
+
+  .bestseller {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .product-container .product-card p {
+    font-size: 0.8rem !important;
+  }
+
+  .product-container .product-card span {
+    font-size: 0.6rem;
+  }
+
+  .product-card p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .btn-view {
+    padding: 12px 45px;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width:1200px){
   .bestseller {
     position: absolute;
