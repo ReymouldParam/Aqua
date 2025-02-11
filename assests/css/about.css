@@ -24,7 +24,7 @@
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items:center;
     gap: 30px;
 }
 .mobile-view{
@@ -160,6 +160,30 @@
     }
 }
 /*responsive*/
+/*larger screens*/
+@media (min-width: 1400px) {
+    .outer-container {
+        flex-direction: row; /* Ensure row layout */
+        justify-content:space-around;
+        flex-wrap:wrap;
+        gap:30px;
+    }
+    .about-row, .us-row {
+        gap: 100px;
+        flex-direction: row;
+    }
+    .right-section {
+        max-width: 400px;
+    }
+    .image-1, .image-2 {
+        width: 300px;
+        height: 330px;
+    }
+    .right-section {
+        max-width: 380px;
+    }
+}
+
 /* Small laptop */
 @media screen and (max-width: 1400px) {
     .about-row, .us-row {
@@ -169,22 +193,29 @@
     .right-section {
         max-width: 400px;
     }
+    .image-1, .image-2 {
+        width: 300px;
+        height: 300px;
+    }
+    .right-section {
+        max-width: 380px;
+    }
 }
 
 /* Small laptop & large tablet */
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .outer-container {
         flex-direction: row; /* Ensure row layout */
         justify-content:space-around;
         flex-wrap:wrap;
-        gap:50px;
+        gap:30px;
     }
     .about-row, .us-row {
         gap: 80px;
         flex-direction: row; /* Ensure row layout */
     }
     .image-1, .image-2 {
-        width: 250px;
+        width: 200px;
         height: 300px;
     }
     .right-section {
@@ -193,24 +224,29 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@media  (max-width: 1024px) {
     .outer-container {
         flex-direction: row; /* Ensure row layout */
         flex-wrap: wrap;
         justify-content:space-around;
         align-items:flex-start;
     }
-    .about-row, .us-row {
+    .us-row {
+        flex-direction: row; /* Ensure row layout */
+        align-items: center;
+        gap: 50px;
+    }
+    .about-row{
         flex-direction: row; /* Ensure row layout */
         align-items: center;
         gap: 50px;
     }
     .image-1, .image-2 {
-        width: 200px;
+        width: 180px;
         height: 250px;
     }
     .image-2 {
-        left: 60px;
+        left: 70px;
         top: 60px;
     }
     .right-section {

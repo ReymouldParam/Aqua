@@ -553,117 +553,88 @@
     font-weight: bold;
   }
 }
-@media (max-width: 992px) {
-  .main-page {
+@media (max-width:992px){
+  .main-page{
     height:50vh;
   }
-
   .entire-container {
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     text-align: center;
-    gap: 15px;
-  }
-  .purifier-gif .purifier-img{
-    margin-top:50px;
-  }
-  .under-text{
-    margin-top:10px;
-  }
-  .left-card {
-    width: 150px; /* Adjusted width */
-    margin-left: 0px !important;
-  }
- .info-card{
-  width:150px;
- }
-  .know-more {
-    font-size: 0.8rem;
-    margin-bottom: 6px;
-  }
+}
+.left-card {
+  max-width: 200px; /* Adjusted width */
+  margin-left:0px !important;
 
-  .know-more h3 {
-    font-size: 0.8rem;
-  }
+}
+.know-more {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.know-more h3{
+  font-size: 0.9rem;
+}
+.info-card p {
+  font-size: 0.5rem;
+}
+.right-card {
+  flex: 1;
+  max-width: 150px; /* Adjusted width */
+  padding: 10px;
+  border-radius: 15px; /* Rounded corners */
+  margin-top:-150px;
+}
 
-  .info-card p {
-    font-size: 0.45rem;
-  }
+.right-card .card {
+  border-radius: 12px;
+  padding:5px;
+  text-align: center;
+}
 
-  .right-card {
-    flex: 1;
-    max-width: 180px; /* Adjusted width */
-    padding: 8px;
-    border-radius: 12px;
-    margin-top: -130px;
-  }
+.card-fade-carousel img {
+  border-radius: 10px;
+  background-color: var(--std-color);
+  max-width: 200px; /* Increased image size */
+}
 
-  .right-card .card {
-    width:100px;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-  .main-page-cards .card{
-    max-width:180px;
-  }
+.text-carousel p {
+  font-size: 0.75rem; /* Slightly smaller font */
+  font-weight: bold;
+  color: #333;
+}
 
-  .card-fade-carousel img {
-    border-radius: 8px;
-    background-color: var(--std-color);
-    max-width: 180px;
-  }
+.carousel {
+  max-width: 100%;
+}
+.slick-carousel {
+  width: 100%;
+  max-width:450px;
+  height: auto;
+}
+.vectors {
+  top: 25vh;
+  gap: 200px;
+}
 
-  .text-carousel p {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #333;
-  }
+.vector-1 img,
+.vector-2 img {
+  width: 140px;
+}
+.bottom-card{
+  margin-top:-70px;
+  margin-right:0px;
+}
+.bottom-card .card .btn{
+  font-size:0.5rem;
+}
+.bottom-card .p2{
+  font-size: 0.5rem;
+}
+.shop-now p{
+  font-size: 0.75rem;
+  font-weight: bold;
+}
 
-  .carousel {
-    max-width: 100%;
-  }
-
-  .slick-carousel {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .vectors {
-    top: 50vh;
-    gap: 130px;
-  }
-
-  .vector-1 img,
-  .vector-2 img {
-    width: 200px;
-  }
-
-  .bottom-card {
-    width:250px;
-    margin-top: -120px;
-    margin-left: 400px;
-    padding:0px !important;
-  }
-
-  .bottom-card .card .btn {
-    font-size: 0.45rem;
-  }
-
-  .bottom-card .card2 {
-    top: -15px;
-    right: -8px;
-  }
-
-  .bottom-card .p2 {
-    font-size: 0.7rem;
-  }
-
-  .shop-now p {
-    font-size: 0.7rem;
-    font-weight: bold;
-  }
 }
 
 
@@ -1710,7 +1681,7 @@ h1 {
   height: auto;
 }
 .flow-image{
-  max-width:60%;
+  max-width:90%;
   height: 20px;
   margin-top:-70px;
   margin-left:50px;
@@ -1940,6 +1911,7 @@ h1 {
   flex-direction: row;
   justify-content:space-between;
   align-items: flex-start;
+  padding-top:20px;
 
 }
 .entire-service .icon-content{
@@ -1974,11 +1946,11 @@ h1 {
 }
 
 .water-glass {
-  max-width: 100% !important;
-  height: auto;
+  max-width: 100%;
+  height:500px;
 }
 .water-glass img{
-  width:100px;
+  max-width:500px !important;
 }
 
 /* Responsive Design */
@@ -2024,6 +1996,7 @@ h1 {
 
   .water-glass {
     max-width: 100%;
+    height:auto;
   }
   .services-list {
     list-style: none;
@@ -2078,6 +2051,7 @@ h1 {
 
   .water-glass {
    width: 100% !important;
+   height:auto;
   }
   .services-list {
     list-style: none;
@@ -2110,6 +2084,7 @@ h1 {
 
   .water-glass {
     max-width: 100%;
+    height:auto;
   }
   .services-list {
     list-style: none;
@@ -2162,6 +2137,7 @@ h1 {
   .water-glass {
     max-width: 100%;
     padding:0px !important;
+    height:auto;
   }
   .services-list {
     list-style: none;
@@ -2190,6 +2166,11 @@ h1 {
   }
   .service-icon .img-fluid{
     max-width:70%;
+  }
+  .water-glass {
+    max-width: 100%;
+    padding:0px !important;
+    height:auto;
   }
 }
 
@@ -2347,6 +2328,16 @@ h1 {
   .right-glass {
       max-width: 100px;
   }
+}
+@media (max-width:992px){
+  .bubble-icon {
+    max-width: 60px;
+}
+.cta-title {
+  margin:0px;
+  padding-top:50px;
+  font-size: 0.75rem;
+}
 }
 
 /* Small Tablets (768px and below) */

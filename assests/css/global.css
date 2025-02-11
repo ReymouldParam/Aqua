@@ -322,7 +322,7 @@ body{
   .display-1 {
       font-size: 4rem;
       height: 80px;
-      margin-top:50px;
+      margin-top:0px !important;
   }
   .footer{
     gap:0px;
@@ -354,6 +354,9 @@ body{
   .line{
      margin:0px;
   }
+  .header{
+    display:none;
+  }
    
 }
 
@@ -371,7 +374,7 @@ body{
   .display-1 {
     font-size: 3rem;
     height: 60px;
-    margin-top:50px;
+    margin-top:0px !important;
   }
   .section-1 p{
     align-content: justify;
@@ -395,6 +398,9 @@ body{
   }
   .feature-item p {
     font-size: 0.5rem;
+  }
+  .header{
+    display:none;
   }
 }
 

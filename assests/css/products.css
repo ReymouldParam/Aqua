@@ -499,7 +499,7 @@
 }
 @media (max-width: 1024px) {
     .pop-up-container {
-        flex-direction: column;
+        flex-direction:row;
         padding: 20px;
     }
 
@@ -507,8 +507,8 @@
         margin-bottom: 20px;
     }
     .image-border {
-        width: 350px;
-        height: 350px;
+        width: 260px;
+        height: 300px;
     }
 
     .right-features {
@@ -524,6 +524,10 @@
 }
 
 @media (max-width: 768px) {
+    .pop-up-container {
+        flex-direction:column;
+        padding: 20px;
+    }
     .popup-title {
         font-size: 28px;
     }
@@ -532,8 +536,7 @@
         font-size: 14px;
     }
     .image-border {
-        width: 300px;
-        height: 300px;
+      display:none;
     }
 
     .pop-feature p {
