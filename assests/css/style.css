@@ -13,6 +13,7 @@
   height: 100vh;
 }
 
+
 .purifier-container {
   display: flex;
   flex-direction: column;
@@ -940,13 +941,14 @@ h1 {
     opacity: 1;
   }
 }
-@media (min-width:1550px){
+@media (min-width:1600px){
   h1 {
     font-weight: bold;
     color: #333;
+    padding-bottom:0px;
   }
   .about p {
-    line-height: 1.6;
+    line-height: 1.2;
     color: #555;
     text-align: justify;
     font-size:25px;

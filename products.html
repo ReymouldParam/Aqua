@@ -240,6 +240,48 @@
           </div>
       </div>
     </div>
+    <div class="pop-up-container" id="Product5">
+      <div class="left-image">
+          <div class="image-border"></div> <!-- Curved border behind the image -->
+          <img src="/assests/images/product2.png" class="pop-img img-fluid">
+      </div>
+      <div class="right-content">
+          <button class="close-btn">&times;</button>
+          <div class="right-overall">
+              <h1 class="popup-title">Smart Water Purifier</h1>
+              <p>
+                  <span class="mineral">Mineral</span> | 
+                  <span class="ro">RO•UV•UF•MC</span> | 
+                  <span class="copper">Active Copper</span>
+              </p>
+              <p class="about-text"><strong>About This Product</strong></p>
+              <p class="description">
+                  Experience ultimate water purification with the Aqua NXT RO•UV•UF Aquasaver water purifier. It removes 99.9999% of bacteria and 99.99% of viruses along with providing 30 times better dust and dirt removal and 10 times more chemical protection compared to local purifiers.
+              </p>
+              <p class="description">
+                  The superior RO Maxx Technology removes pesticides, industrial waste, and heavy metals like mercury, arsenic, and lead. UV E-Boiling technology ensures purity equal to over 20 mins of boiled water.
+              </p>
+              
+              <!-- Features Section Title -->
+              <p class="features-title">Features</p>
+  
+              <div class="right-features">
+                  <div class="pop-feature">
+                      <img src="/assests/images/section3-left-bg-icon6.png" class="right-icon">
+                      <p>Healthy Water</p>
+                  </div>
+                  <div class="pop-feature">
+                      <img src="/assests/images/section3-left-bg-icon4.png" class="right-icon">
+                      <p>Safety Assured</p>
+                  </div>
+                  <div class="pop-feature">
+                      <img src="/assests/images/section3-left-bg-icon1.png" class="right-icon">
+                      <p>Dry Run Protection</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
   </div>
    <div class="subsec-3">
   <div class="category1" data-category="cat1">
@@ -290,7 +332,7 @@
               <h3>Smart Water Purifier</h3>
               <p><span class="mineral">Mineral</span> | <span class="ro">RO•UV•UF•MC</span> | <span class="copper">Active Copper</span></p>
           </div>
-          <button class="know-more">Know More</button>
+          <button class="know-more" data-target="#Product5">Know More</button>
       </div>
 
       <div class="card-wrapper">
@@ -392,8 +434,6 @@
   </div>
 </div>
 </div>
-
-
 </div>
 <div class="products-section2 padding-x">
   <div class="banner-section">
@@ -573,7 +613,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+/*animations for product*/
+const knowMoreButtons = document.querySelectorAll('.know-more');
+  const cardContainer = document.querySelector('.card-container');
 
+  knowMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = document.querySelector(button.getAttribute('data-target'));
+      cardContainer.classList.add('moved');
+      target.classList.add('show');
+    });
+  });
+
+  const closeButtons = document.querySelectorAll('.close-btn');
+
+  closeButtons.forEach(close => {
+    close.addEventListener('click', () => {
+      const popup = close.closest('.pop-up-container');
+      popup.classList.remove('show');
+      cardContainer.classList.remove('moved');
+    });
+  });
 
 
 </script>
