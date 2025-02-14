@@ -7,7 +7,6 @@
 /*section-1*/
 .Aboutsection-1 {
     padding-top: 60px;
-    padding-bottom:60px;
     background-color: #eef7fd;
 }
 
@@ -42,7 +41,7 @@
 .about-row, .us-row {
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 350px;
 }
 
 .about-row h1 {
@@ -170,6 +169,10 @@
     }
     .about-row, .us-row {
         gap: 100px;
+        flex-direction: row;
+    }
+    .about-row{
+        gap:170px;
         flex-direction: row;
     }
     .right-section {
@@ -384,8 +387,8 @@
         margin-left:-50px;
     }
     .image-1, .image-2 {
-        width: 160px;
-        height: 200px;
+        width:100%;
+        height:auto;
     }
     .image-2 {
         margin-left:10px;
@@ -429,11 +432,11 @@
         padding-bottom:10px;
     }
     .image-1, .image-2 {
-        width: 140px;
-        height: 180px;
+        width: 100% !important;
+        height: 200px !important;
     }
     .image-2 {
-        margin-left:10px;
+        margin-left:-20px;
         margin-top:-50px;
     }
     .image-1{
@@ -460,7 +463,7 @@
 .second-section {
     text-align: center;
     background-color: #eef7fd;
-    padding-top:100px;
+    padding-top:70px;
 }
 .card-icon-wrapper {
     width: 100px; 
@@ -613,7 +616,7 @@
 }
 @media screen and (max-width: 768px) {
     .second-section{
-        padding-top:0px;
+        padding-top:0px !important;
     }
     .main-heading {
         padding:0px;
@@ -636,7 +639,7 @@
 }
 @media screen and (max-width: 576px) {
     .second-section{
-        padding-top:0px;
+        padding-top:0px !important;
     }
     .main-heading {
         font-size: 1.5rem;
@@ -720,12 +723,12 @@
 }
 
 /* Left Side Hexagons */
-.hex1 { top: 5%; left: 15%; }
+.hex1 { top: 5%; left: 13%; }
 .hex2 { top: 35%; left: 5%; }
 .hex3 { bottom: 10%; left: 7%; }
 
 /* Right Side Hexagons */
-.hex4 { top: 5%; right: 15%; }
+.hex4 { top: 5%; right: 13%; }
 .hex5 { top: 35%; right: 5%; }
 .hex6 { bottom: 10%; right:5%; }
 
@@ -813,6 +816,20 @@
     .section-3 .right-side p {
         font-size: 1.1rem;
     }
+    .hex6 { 
+        bottom: 5%;
+        right: 5%;
+    };
+    .hex3 { 
+        bottom: 5%;
+        right: 5%;
+    };
+    .hex-group p {
+        font-size: 0.5rem !important;
+        font-weight: bold;
+        color: white;
+        margin-top: 5px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .section-3 {
@@ -835,6 +852,20 @@
     }
     .section-3 .right-side p {
         font-size: 1rem;
+    }
+    .hex6 { 
+        bottom: 0%;
+        right: 5%;
+    };
+    .hex3 { 
+        bottom: 0% !important;
+        right: 5%;
+    };
+    .hex-group p {
+        font-size: 0.5rem !important;
+        font-weight: bold;
+        color: white;
+        margin-top: 5px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -885,6 +916,12 @@
 
 /* ✅ For max-width: 992px */
 @media screen and (max-width: 992px) {
+    .section-3{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
     .image-container {
         width: 400px;
         height: 350px;

@@ -276,6 +276,9 @@
     .contact-card {
         max-width: 200px !important; /* Slightly reduce max width */
     }
+    .purifier {
+        max-width: 260px;
+    }
 }
 @media (max-width:1200px){
     .contact-sub {
@@ -285,7 +288,7 @@
         max-width: 200px !important; /* Slightly reduce max width */
     }
     .purifier {
-        max-width: 260px;
+        max-width: 240px;
     }
 }
 @media (max-width: 1024px) {

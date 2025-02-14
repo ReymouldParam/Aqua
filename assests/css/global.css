@@ -159,62 +159,66 @@ body{
 }
 
 /* About & Contact Section */
-
 .about-contact {
-  background:linear-gradient(rgba(98, 117, 149, 0.5), rgba(84, 107, 129, 0.5)),url('/assests/images/footer.jpeg');
+  background: linear-gradient(rgba(98, 117, 149, 1), rgba(84, 107, 129, 0.5)), url('/assests/images/footer.jpeg');
   background-repeat: no-repeat;
-  background-position:top;
-
+  background-position: top;
 }
-.about-section{
+.about-section {
   background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   font-size: 0.75rem;
-  opacity:0.85;
+  opacity: 0.85;
 }
-
+.about-contact-section{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.headings {
+  font-weight: 700;
+  color:white;
+}
 .about-section h2,
 .contact-form h2 {
   font-size: 1.5rem;
 }
-
-
 .social-icons a {
-  color:white;
+  color: white;
 }
-
 .social-icons a:hover {
-  color:var(--std-color);
+  color: var(--std-color);
 }
-
 .contact-form button {
-  background-color:rgba(173, 178, 178, 0.493);
-  border:1px solid white;
+  background-color: rgba(173, 178, 178, 0.493);
+  border: 1px solid white;
   border-radius: 15px !important;
 }
-.contact-form button:hover{
-  background-color:var(--std-color);
+.contact-form button:hover {
+  background-color: var(--std-color);
 }
 .display-1 {
   font-size: 12rem;
-  font-weight:900;
+  font-weight: 900;
   color: white;
   text-align: center;
   white-space: nowrap;
-  width:auto;
-  height:200px;
+  width: auto;
+  height: 200px;
 }
-.footer{
-  display:flex;
+.flex-fill {
+  flex: 1;
+  min-width: 0;
+}
+.footer {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   font-size: 0.5rem;
 }
+
 
 /* Media Queries */
 @media (max-width: 1400px) {
@@ -307,6 +311,9 @@ body{
   .feature-item p {
     font-size: 0.75rem;
   }
+  .about-contact-section { 
+    flex-wrap: wrap; 
+  }
 }
 
 @media (max-width: 768px) {
@@ -355,8 +362,9 @@ body{
   .line{
      margin:0px;
   }
-  .header{
-    display:none;
+  .about-contact-section { 
+    margin-top:30px;
+    flex-direction: column;
   }
    
 }
@@ -400,8 +408,9 @@ body{
   .feature-item p {
     font-size: 0.5rem;
   }
-  .header{
-    display:none;
+  .about-contact-section { 
+    margin-top:30px;
+    flex-direction: column;
   }
 }
 
