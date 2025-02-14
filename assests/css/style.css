@@ -2158,6 +2158,7 @@ h1 {
     max-width: 100%;
     padding:0px !important;
     height:auto;
+    margin-left:0px;
   }
   .services-list {
     list-style: none;
@@ -2191,6 +2192,7 @@ h1 {
     max-width: 100%;
     padding:0px !important;
     height:auto;
+    margin-left:0px;
   }
 }
 

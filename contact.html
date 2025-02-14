@@ -96,6 +96,11 @@
         <div class="sec3-right">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.620637080493!2d78.4901345!3d17.4299842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1dcc39c765%3A0xa423c8477c2fd490!2sTirupati%20Aqua%20Tech!5e0!3m2!1sen!2sin!4v1738826105128!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div id="popup-message" class="popup">
+          <h2 id="popup-heading" class="pop-up-heading"></h2>
+          <p id="popup-para" class="pop-up-para"></p>
+          <button id="close-popup" class="close-btn">Close</button>
+      </div>
     </div>
 </div>
 <div class="contactsec4">
@@ -191,5 +196,36 @@
 
 <!--script tags-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  // pop-up card
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const flagValue = urlParams.get('emailSuccess');
+    const popupMessage = document.getElementById("popup-message");
+    const popupHeading = document.getElementById("popup-heading");
+    const popupPara = document.getElementById("popup-para");
+    const closePopup = document.getElementById("close-popup");
+
+    if (flagValue === 'true') {
+        popupHeading.innerHTML = "EMAIL SENT SUCCESSFULLY";
+        popupPara.innerHTML = "Thanks for Your Subscription"; // Clear any existing message
+        popupMessage.style.display = "block";
+    } else if (flagValue === 'false') {
+        popupHeading.innerHTML = "EMAIL NOT SENT";
+        popupPara.innerHTML = "There was an error sending your message. Please try again later.";
+        popupMessage.style.display = "block";
+    }
+
+    closePopup.addEventListener("click", function () {
+        popupMessage.style.display = "none";
+    });
+
+    // Get the current URL without the query parameters
+    const baseUrl = window.location.href.split('?')[0];
+
+    // Replace the current state with a new state without the query parameters
+    history.replaceState(null, null, baseUrl);
+});
+</script>
 </body>
 </html>

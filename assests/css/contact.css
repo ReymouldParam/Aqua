@@ -360,6 +360,9 @@
     margin: auto;
     gap: 50px;
 }
+.contactsub3 .popup{
+    display:none;
+}
 
 .sec3-left {
     flex: 1;
