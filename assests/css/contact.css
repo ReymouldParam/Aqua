@@ -301,11 +301,12 @@
 @media (max-width:992px){
     .contact-sub{
         display:flex;
-        flex-direction: column;
+        flex-direction:row;
     }
     .contact-card {
-        padding: 25px;
-        width:200px;
+        max-width:500px;
+        margin:0px !important;
+        padding:0px !important;
     }
     .support-title {
         font-size: 1rem;
@@ -327,6 +328,12 @@
 }
 
 @media (max-width: 768px) {
+    .contactsec2{
+        padding:30px;
+    }
+    .contact-card {
+        padding:20px !important;
+    }
     .contact-sub {
         flex-direction: column;
     }
@@ -510,12 +517,16 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    .contactsub3{
+        padding-top:50px;
+    }
     .contactsub3 {
         flex-direction: column;
         align-items: center;
     }
     .sec3-left, .sec3-right {
         width: 100%;
+        padding:0px;
     }
     .sec3-left .form-title {
         font-size: 14px;
