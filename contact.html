@@ -52,19 +52,40 @@
                 <a class="nav-link" href="services.html">SERVICES</a>
               </li>
             </ul>
-            <a href="contact.html" class="text-decoration-none text-black"><button class="btn contact-btn">Contact Us</button></a>
+            <a href="contact.html" class="text-decoration-none text-black active"><button class="btn contact-btn" style="background-color:white; color:var(--std-color);">Contact Us</button></a>
           </div>
         </div>
 </nav>
-<div class="contactsec1 padding-x">
+<div class="contactsec3 padding-x">
+  <div class="contactsub3">
+      <form  action="contact.php" method="post" class="sec3-left">
+        <h1 class="message-title">SEND US A MESSAGE</h1>
+        <p class="message-subtitle">FEEL FREE TO WRITE US AND ASK ANY QUESTION YOU HAVE.</p>
+          <input name="name" type="text" class="form-control" placeholder="Your Name">
+          <input  name="email" type="email" class="form-control" placeholder="Email Address">
+          <input  name="number" type="phonenumber" class="form-control" placeholder="Phone Number">
+          <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+          <button class="btn send">Send</button>
+      </form>
+      <div class="sec3-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.620637080493!2d78.4901345!3d17.4299842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1dcc39c765%3A0xa423c8477c2fd490!2sTirupati%20Aqua%20Tech!5e0!3m2!1sen!2sin!4v1738826105128!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="popup-message" class="popup">
+        <h2 id="popup-heading" class="pop-up-heading"></h2>
+        <p id="popup-para" class="pop-up-para"></p>
+        <button id="close-popup" class="close-btn">Close</button>
+    </div>
+  </div>
+</div>
+<!--<div class="contactsec1 padding-x">
     <h1>GET IN TOUCH</h1>
     <div class="right-sec">
         <p class="support-text">Have a query or facing an issue? We're ready to assist you every step of the way. Reach out to us by clicking below!</p>
         <p class="customer-support">CUSTOMER SUPPORT <span><i class="fa-solid fa-arrow-right"></i></span></p>
     </div>
-</div>
+</div>-->
 <div class="contactsec2 padding-x">
-    <h1 class="contact-heading">HELPING YOU ENJOY EVERY SIP OF PURE,<br> REFRESHING WATER.</h1>
+    <!--<h1 class="contact-heading">HELPING YOU ENJOY EVERY SIP OF PURE,<br> REFRESHING WATER.</h1>-->
     <div class="contact-sub">
         <div class="sec2-left-card contact-card">
            <p class="support-title">PHONE SUPPORT</p>
@@ -79,28 +100,6 @@
             <p class="support-info">tirupatiaquatech@yahoo.com</p>
             <button class="btn call">Send Us Email</button>
          </div>
-    </div>
-</div>
-<div class="contactsec3 padding-x">
-    <div class="contactsub3">
-        <form  action="contact.php" method="post" class="sec3-left">
-            <p class="form-title">FILL IN THE DETAILS BELOW, AND OUR TEAM WILL GET BACK SOON</p>
-            <input name="name" type="text" class="form-control" placeholder="Your Name">
-            <input  name="email" type="email" class="form-control" placeholder="Email Address">
-            <input  name="number" type="phonenumber" class="form-control" placeholder="Phone Number">
-            <input name="message" type="text" class="form-control" placeholder="Your Message">
-            <button class="btn send">Send</button>
-            <h1 class="message-title">SEND US A MESSAGE</h1>
-            <p class="message-subtitle">FEEL FREE TO WRITE US AND ASK ANY QUESTION YOU HAVE.</p>
-        </form>
-        <div class="sec3-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.620637080493!2d78.4901345!3d17.4299842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1dcc39c765%3A0xa423c8477c2fd490!2sTirupati%20Aqua%20Tech!5e0!3m2!1sen!2sin!4v1738826105128!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div id="popup-message" class="popup">
-          <h2 id="popup-heading" class="pop-up-heading"></h2>
-          <p id="popup-para" class="pop-up-para"></p>
-          <button id="close-popup" class="close-btn">Close</button>
-      </div>
     </div>
 </div>
 <div class="contactsec4">
