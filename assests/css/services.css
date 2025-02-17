@@ -598,6 +598,7 @@
 
     .service-sec3 p {
         font-size: 1rem;
+        padding:0px;
     }
     .flow-image img{
         width:100%;

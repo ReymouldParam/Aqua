@@ -271,7 +271,7 @@
 /* Responsive Design */
 @media (min-width:1700px){
   .purifier-container {
-    max-width: 1200px;
+    align-content:center;
   }
 
   .purifier-gif {
@@ -282,7 +282,7 @@
   .entire-container {
     max-width: 1200px;
     gap: 20px;
-    margin-top:200px;
+    margin-top:150px;
   }
 
   .vectors {
@@ -298,12 +298,10 @@
     justify-content: flex-end;
     margin-right: 0;
   }
-  .slick-carousel {
-    width: 100%;
-    max-width:800px;
-    height: auto;
-  }
 
+  .under-text{
+    font-size:2rem;
+  }
 }
 @media (min-width:1600px) and (max-width:1700px){
   .purifier-container {
@@ -338,6 +336,9 @@
     width: 100%;
     max-width:800px;
     height: auto;
+  }
+  .main-page-cards .card{
+    margin-left:300px !important;
   }
 
 }

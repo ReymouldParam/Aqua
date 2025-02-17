@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $body = "Name: $name\nEmail: $email\nNumber: $number\nMessage: $message";
 
     // Send email to both recipients
-    mail("naresh.narnapati@reymould.com", $subject, $body);
+    mail("pravallika.pentakota@reymould.com", $subject, $body);
 
     if (mail($to, $subject, $body)) {
         header("Location: contact.html?emailSuccess=true");
