@@ -534,7 +534,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-30px); /* Moves the bubble upward */
+      transform: translateY(-15px); /* Moves the bubble upward */
     }
     100% {
       transform: translateY(0); /* Returns to original position */

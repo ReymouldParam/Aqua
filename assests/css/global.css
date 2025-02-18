@@ -502,7 +502,7 @@ body{
   width: 50%;
   height: auto;
   /* Adjust height to fit content */
-  background-color: #D51832;
+  background:linear-gradient(#8AD5FE,#DAF2FF);
   /* Background color */
   transform: translate(-50%, -50%);
   padding: 20px;

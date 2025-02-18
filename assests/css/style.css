@@ -758,6 +758,7 @@
   }
   .info-card{
     animation:none;
+    margin-top:0px;
   }
   .info-card p{
     font-size:0.75rem;
@@ -1599,7 +1600,6 @@ h1 {
   .product-container .product-card {
     width:50%; /* Full width for smaller screens */
     height:auto;
-    margin:auto;
   }
   .product-container .product-card p {
     margin: 5px 0;
@@ -2405,7 +2405,7 @@ h1 {
       transform: translateY(0);
   }
   50% {
-      transform: translateY(-30px);
+      transform: translateY(-15px);
   }
   100% {
       transform: translateY(0);
@@ -2496,6 +2496,7 @@ h1 {
       display:flex;
       flex-direction:row;
       justify-content: center;
+      gap:10px;
   }
   .bubble-icon {
       max-width: 20px;
