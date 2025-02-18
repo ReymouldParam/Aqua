@@ -301,7 +301,9 @@
 @media (max-width:992px){
     .contact-sub{
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
+        padding-top:30px;
+        padding-bottom:30px;
     }
     .contact-card {
         max-width:500px;

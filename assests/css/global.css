@@ -407,12 +407,15 @@ body{
   }
   .about-contact-section .section-1{
     width:100%;
+    margin-top:10px;
   }
   .about-contact-section .section-2{
     width:100%;
+    margin-top:10px;
   }
   .about-contact-section .section-3{
     width:100%;
+    margin-top:10px;
   }
    
 }
@@ -580,4 +583,22 @@ body{
       /* Adjust padding */
   }
 }
-
+/*what's apps symbol*/
+.whats-up{
+  position:fixed;
+  z-index:99;
+  bottom:0;
+  right:3%;
+  width:50px;
+  height:50px;
+}
+.whats-up i{
+  font-size:40px;
+  color:var(--std-color);
+  display:inline-block;
+  animation: beat 1.5s infinite ease-in-out;
+}
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
