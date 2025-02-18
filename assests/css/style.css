@@ -2625,7 +2625,7 @@ h1 {
   .section-description {
     font-size: 0.75rem;
     color:black;
-    width:50%;
+    width:100% !important;
     margin-bottom:300px;
     line-height: 1.6;
   }
