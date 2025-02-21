@@ -10,10 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position:bottom;
-  height: 100vh;
+  height:100vh;
 }
-
-
 .purifier-container {
   display: flex;
   flex-direction: column;
@@ -24,7 +22,6 @@
   position: relative;
 }
 
-/* Center the purifier text above the image */
 .purifier-gif {
   position: relative;
   width: 100%;
@@ -36,42 +33,83 @@
   align-items: center;
 }
 
-/* Centered purifier text */
 .purifier-gif .purifier-text {
   position: absolute;
-  top: -50px; /* Moves it slightly above the image */
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;
   font-weight: bold;
-  color: #000; /* Adjust color as needed */
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
 }
 
-/* Image section */
-.purifier-gif .purifier-img {
-  background-image: url('/assests/images/FFDFDF.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.purifier-text h1 {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  background: url('/assests/images/movingpurifier.jpg') repeat;
+  background-size: 200% 200%; /* Increase size for better movement */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: zigzag-flow 4s infinite linear alternate;
+  z-index:0;
+}
+
+/* Stroke effect for better visibility */
+.purifier-text h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: px rgba(255, 255, 255, 0.8);
+}
+
+/* Water Flow Animation */
+@keyframes zigzag-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 10% 10%;
+  }
+  50% {
+    background-position: -10% 25%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: -10% 50%; /* Moves only up to 50% */
+  }
 }
 
 /* Under-text positioned slightly left below the purifier text */
 .under-text {
   position: absolute;
-  top:80%;
-  left: 50%; /* Moves text slightly left */
-  color: var(--std-color);
-  font-size: 1.2rem;
+  top:100%;
+  left: 60%; /* Moves text slightly left */
+  color:#328BC2;
+  font-size:1.1rem;
   font-weight: bold;
   text-align: left;
+  animation: slideInFromRight 1s ease-out forwards;
 }
 /* General Styles */
-
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Initially invisible */
+  }
+  to {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fully visible */
+  }
+}
 /* Center the Entire Container */
 .entire-container {
   display: flex;
@@ -83,28 +121,36 @@
   margin: auto;
   gap: 20px;
 }
-.slick-carousel .slide-1,
-.slick-carousel .slide-2,
-.slick-carousel .slide-3,
-.slick-carousel .slide-4 {
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
+
+.slick-carousel {
+  position: relative;
   width: 100%;
-}
-.slick-carousel .slide-1 { background-image: url('/assests/images/main1.png'); }
-.slick-carousel .slide-2 { background-image: url('/assests/images/product1.png'); }
-.slick-carousel .slide-3 { background-image: url('/assests/images/purifierimage.png'); }
-.slick-carousel .slide-4 { background-image: url('/assests/images/product3.png'); }
-.main-page-cards .card {
-  background:#e1f1fa; 
-  border-radius: 20px;
-  padding: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  border:3px solid white;
+  height: 400px; /* Show only one slide at a time */
+  overflow: hidden; /* Hide extra slides */
+  display: flex;
+  flex-direction: column;
 }
 
+.slick-carousel .slide {
+  height: 400px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 1s ease-in-out; /* Smooth scrolling effect */
+}
+
+.slide-1 { background-image: url('/assests/images/main1.png'); }
+.slide-2 { background-image: url('/assests/images/product1.png'); }
+.slide-3 { background-image: url('/assests/images/purifierimage.png'); }
+.slide-4 { background-image: url('/assests/images/product3.png'); }
+.slick-track {
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1) !important;
+}
+
+
+.slick-carousel:hover {
+  animation-play-state: running !important; /* Force animation to continue */
+}
 
 
 /* Left Card */
@@ -177,7 +223,7 @@
   max-width: 300px; /* Adjusted width */
   padding: 10px;
   border-radius: 15px; /* Rounded corners */
-  margin-top:-150px;
+  margin-top:-50px;
 }
 
 .right-card .card {
@@ -188,6 +234,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 /*animation for rightcard*/
+
 
 .card-fade-carousel img {
   border-radius: 20px;
@@ -994,7 +1041,7 @@
 .about::before{
   background: rgb(216, 216, 216); 
 }
-h1 {
+.aboutus h1 {
   padding-bottom:30px;
   font-weight: bold;
   color: #333;
@@ -1386,9 +1433,12 @@ h1 {
   color:var(--std-color)
 }
 .products h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  /*margin-bottom: 20px;*/
   color: #333;
+  padding:0px;
+  margin:0px;
+  font-weight: bold;
 }
 
 .product-container {
@@ -1469,6 +1519,8 @@ h1 {
 
   .products h1 {
     font-size: 1.8rem;
+    margin:0px;
+    padding:0px;
   }
 
   .product-container {
@@ -1514,6 +1566,8 @@ h1 {
 
   .products h1 {
     font-size: 2.2rem;
+    margin:0px;
+    padding:0px;
   }
 
   .product-container {
@@ -2290,14 +2344,13 @@ h1 {
 /* Container */
 .product-technology-section {
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px 20px;
 }
 
 /* Title and Description */
 .product-technology-section h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
 }
 
 .product-technology-section p {
