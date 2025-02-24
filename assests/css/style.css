@@ -169,9 +169,17 @@
   position: relative;
   border:2px solid white;
   z-index:1;
+  animation: moveUpDown 2s infinite alternate ease-in-out;
 }
 /*animation for left-card*/
-
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(30px);
+  }
+}
 .know-more {
   font-size: 0.9rem;
   font-weight: bold;
@@ -232,9 +240,18 @@
   padding:10px;
   text-align:left;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  animation: moveToFro 2s infinite alternate ease-in-out;
 }
 /*animation for rightcard*/
-
+        
+@keyframes moveToFro {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50px);
+  }
+}
 
 .card-fade-carousel img {
   border-radius: 20px;
@@ -276,7 +293,7 @@
 
 .vector-1 img,
 .vector-2 img {
-  width: 200px;
+  width: 180px;
   height: auto; /* Maintains aspect ratio */
 }
 .bottom-card{
@@ -284,14 +301,14 @@
   flex-direction: row;
   justify-content:flex-end;
   align-items: center;
-  margin-top:-130px;
+  margin-top:-80px;
   margin-right:0px;
   border:none;
 }
 .bottom-card .card .btn{
   font-size:1rem;
   background-color:var(--std-color);
-  border-radius:15px;
+  border-radius:10px;
   padding-left:25px;
   padding-right:25px;
   text-align:center;
@@ -318,6 +335,13 @@
 }
 /* Responsive Design */
 @media (min-width:1700px){
+  .purifier-text h1 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+  }
   .purifier-container {
     align-content:center;
   }
@@ -346,12 +370,20 @@
     justify-content: flex-end;
     margin-right: 0;
   }
-
-  .under-text{
-    font-size:2rem;
+  .under-text {
+    left: 60%; /* Moves text slightly left */
+    color:#328BC2;
+    font-size:3rem;
   }
 }
 @media (min-width:1600px) and (max-width:1700px){
+  .purifier-text h1 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+  }
   .purifier-container {
     max-width: 1200px;
   }
@@ -385,9 +417,17 @@
     max-width:800px;
     height: auto;
   }
+  .under-text {
+    left: 60%; /* Moves text slightly left */
+    color:#328BC2;
+    font-size:3rem;
+  }
 
 }
 @media (min-width: 1550px) and (max-width:1600px){
+  .purifier-text h1 {
+    font-size:10rem;
+  }
 
   .purifier-gif {
     max-width: 100%;
@@ -436,6 +476,10 @@
   }
 }
 @media screen and (max-width: 1400px) {
+  .purifier-text h1 {
+    font-size:10rem;
+    top:150px;
+  }
   .main-page {
     height: auto;
     padding-bottom: 50px;
@@ -482,7 +526,7 @@
   }
   .info-card{
      width:250px;
-     margin-top:150px;
+     margin-top:50px;
      margin-left:-120px !important;
   }
 
@@ -523,6 +567,10 @@
 /*****/
 /* Styles for screens up to 1200px */
 @media (min-width:1024px) and (max-width: 1200px) {
+  .purifier-text h1 {
+    font-size:8rem;
+    top:130px;
+  }
   .main-page {
     height:100vh;
   }
@@ -691,6 +739,10 @@
   }
 }
 @media (min-width:768px) and (max-width:992px) {
+  .purifier-text h1 {
+    font-size:5rem;
+    top:120px;
+  }
   .main-page{
     height:50vh;
   }
@@ -781,10 +833,11 @@
     font-weight: bold;
   }
 }
-
-
-
 @media (max-width: 768px) {
+  .purifier-text h1 {
+    font-size:5rem;
+    top:80px;
+  }
   .main-page{
     background-image: url('/assests/images/services-bg.png');
     height:100% !important;
@@ -811,10 +864,10 @@
     font-size:0.75rem;
   }
   .under-text {
-    font-size: 0.75rem;
-    left: 50%;
+    font-size: 0.5rem !important;
     transform: translateX(-50%);
     text-align: center;
+    animation:none;
   }
   .entire-container {
     flex-direction:column;
@@ -902,6 +955,11 @@
       font-size: 0.8rem;
       padding: 5px 10px;
   }
+  .under-text {
+    animation:none;
+    font-size: 0.75rem;
+    text-align: center;
+  }
 }
 /* ✅ Responsive Styling */
 @media (max-width: 1400px) {
@@ -911,11 +969,6 @@
 
   .purifier-gif .purifier-text {
     font-size: 4.5rem;
-  }
-
-  .under-text {
-    font-size: 1.2rem;
-    left: 40%; /* Adjusted position for large screens */
   }
 }
 
@@ -927,11 +980,6 @@
   .purifier-gif .purifier-text {
     font-size: 4rem;
   }
-
-  .under-text {
-    font-size: 1.1rem;
-    left: 45%;
-  }
 }
 @media (max-width: 1024px) {
   .purifier-gif {
@@ -940,11 +988,6 @@
 
   .purifier-gif .purifier-text {
     font-size: 3rem;
-  }
-
-  .under-text {
-    font-size: 1rem;
-    left: 50%;
   }
 }
 
@@ -957,13 +1000,6 @@
     font-size: 2.5rem;
     top: -40px;
   }
-
-  .under-text {
-    font-size: 0.9rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
 }
 
 @media (max-width: 576px) {
@@ -974,13 +1010,6 @@
   .purifier-gif .purifier-text {
     font-size: 2rem;
     top: -30px;
-  }
-
-  .under-text {
-    font-size: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
   }
 }
 

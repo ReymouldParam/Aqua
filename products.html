@@ -63,13 +63,12 @@
         </div>
     </div>
     <div class="subsec-2">
-      <a href="" class="text-decoration-none active-link" data-category="cat1">RO Water Purifier</a>
-      <a href="" class="text-decoration-none" data-category="cat2">UV Water Purifier</a>
-      <a href="" class="text-decoration-none" data-category="cat3">Active Copper</a>
-      <a href="" class="text-decoration-none">Stainless Steel Tank</a>
-      <a href="" class="text-decoration-none">Smart Water Purifier</a>
-      <a href="" class="text-decoration-none" data-category="cat4">Filters</a>
-      <a href="" class="text-decoration-none">Spares</a>
+      <a href="" class="text-decoration-none active-link" data-category="cat1">Residential Water Purifier</a>
+      <a href="" class="text-decoration-none" data-category="cat2">Commercial & industrial water Treatment plants</a>
+      <a href="" class="text-decoration-none" ></a>
+      <a href="" class="text-decoration-none"data-category="cat3">ISI Grade Commercial Bottling Plants</a>
+      <a href="" class="text-decoration-none"> Water softners</a>
+      <a href="" class="text-decoration-none" data-category="cat4">others</a>
    </div>
   <div class="pop-up">
     <div class="pop-up-container" id="Product1">
@@ -283,7 +282,7 @@
       </div>
     </div>
   </div>
-   <div class="subsec-3">
+  <div class="subsec-3">
   <div class="category1" data-category="cat1">
     <div class="card-container">
       <!-- Row 1 -->
@@ -532,7 +531,7 @@
 <!--scripts-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const knowMoreButtons = document.querySelectorAll(".know-more");
     const popUpOverlay = document.querySelector(".pop-up");
     const popUps = document.querySelectorAll(".pop-up-container");
@@ -610,28 +609,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 /*animations for product*/
-const knowMoreButtons = document.querySelectorAll('.know-more');
-  const cardContainer = document.querySelector('.card-container');
-
-  knowMoreButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const target = document.querySelector(button.getAttribute('data-target'));
-      cardContainer.classList.add('moved');
-      target.classList.add('show');
-    });
-  });
-
-  const closeButtons = document.querySelectorAll('.close-btn');
-
-  closeButtons.forEach(close => {
-    close.addEventListener('click', () => {
-      const popup = close.closest('.pop-up-container');
-      popup.classList.remove('show');
-      cardContainer.classList.remove('moved');
-    });
-  });
-
-
 </script>
 </body>
 </html>
