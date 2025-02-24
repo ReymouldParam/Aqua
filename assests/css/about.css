@@ -262,7 +262,7 @@
       padding: 10px;
     }
     .image-1, .image-2 {
-      width: 250px;
+      width: 200px;
       height: 250px;
       box-sizing: border-box;
     }
@@ -725,12 +725,12 @@
 /* Left Side Hexagons */
 .hex1 { top: 5%; left: 13%; }
 .hex2 { top: 35%; left: 5%; }
-.hex3 { bottom: 10%; left: 7%; }
+.hex3 { bottom: 5%; left: 7%; }
 
 /* Right Side Hexagons */
 .hex4 { top: 5%; right: 13%; }
 .hex5 { top: 35%; right: 5%; }
-.hex6 { bottom: 10%; right:5%; }
+.hex6 { bottom: 5%; right:5%; }
 
 /* Hexagon Shape */
 .hexagon {
@@ -939,6 +939,11 @@
     .section-3 .right-side p {
         font-size: 0.95rem;
     }
+    .purifier-img {
+        width: 200px;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
 }
 @media screen and (max-width: 768px) {
     .section-3 {
@@ -980,6 +985,11 @@
         font-size: 0.9rem;
         text-align: center;
     }
+    .purifier-img {
+        width: 200px;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
 }
 
 /* ✅ For max-width: 576px (Large Mobiles) */
@@ -1014,5 +1024,10 @@
     }
     .section-3 .right-side p {
         font-size: 0.85rem;
+    }
+    .purifier-img {
+        width: 200px;
+        height: auto;
+        transition: transform 0.5s ease;
     }
 }

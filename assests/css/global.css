@@ -284,6 +284,19 @@ body{
   .feature-item img {
     max-width: 22px;
   }
+  .section-1 p{
+    font-size:0.75rem;
+  }
+  .section-2 p{
+    font-size:0.75rem;
+  }
+  .section-3 p{
+    font-size:0.75rem;
+  }
+  .footer{
+    gap:0px;
+    font-size:0.75rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -348,6 +361,18 @@ body{
   }
   .about-contact-section .section-3{
     width:100%;
+  }
+  .about-contact-section .section-1{
+    width:100%;
+    margin-top:10px;
+  }
+  .about-contact-section .section-2{
+    width:100%;
+    margin-top:10px;
+  }
+  .about-contact-section .section-3{
+    width:100%;
+    margin-top:10px;
   }
 
 }
@@ -594,7 +619,7 @@ body{
 }
 .whats-up i{
   font-size:40px;
-  color:var(--std-color);
+  color:#25d366;
   display:inline-block;
   animation: beat 1.5s infinite ease-in-out;
 }
