@@ -90,7 +90,7 @@
 }
 
 .right-section p {
-    font-size: 1.1rem;
+    font-size: 18px;
     color: #333;
 }
 
@@ -165,7 +165,7 @@
         flex-direction: row; /* Ensure row layout */
         justify-content:space-around;
         flex-wrap:wrap;
-        gap:30px;
+        gap:11px;
     }
     .about-row, .us-row {
         gap: 100px;
@@ -276,8 +276,9 @@
     .outer-container {
         flex-direction: row; /* Ensure row layout */
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items:flex-start;
+        gap:10px;
     }
     .us-row {
         flex-direction: row; /* Ensure row layout */
@@ -295,14 +296,14 @@
     }
     .image-2 {
         left: 70px;
-        top: 60px;
+        top: 100px;
     }
     .right-section {
         max-width: 40%;
         text-align:flex-start;
     }
     .right-section p {
-       font-size: 1rem;
+       font-size:16px;
     }
     .about-row h1 {
         font-size: 3rem;
@@ -449,7 +450,7 @@
         text-align: center;
     }
     .right-section p {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
     .about-row h1, .us-row h1 {
         font-size: 2rem;
@@ -478,13 +479,13 @@
 }
 
 .main-heading {
-    font-size: 2.5rem;
+    font-size:30px;
     font-weight: bold;
     color: #000;
 }
 
 .sub-heading {
-    font-size: 2.5rem;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -493,7 +494,7 @@
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: 18px;
     color: #333;
     max-width: 100%;
     margin: 0 auto;
@@ -543,6 +544,7 @@
 @media screen and (max-width: 1400px) {
     .description {
         max-width: 85%;
+        font-size:18px;
     }
     .cards {
         gap: 15px;
@@ -555,13 +557,13 @@
 /*For max-width: 1200px */
 @media screen and (max-width: 1200px) {
     .main-heading {
-        font-size: 2.2rem;
+        font-size:30px;
     }
     .sub-heading {
-        font-size: 2.2rem;
+        font-size: 30px;
     }
     .description {
-        font-size: 1.1rem;
+        font-size:18px;
         max-width: 90%;
     }
     .card {
@@ -580,10 +582,10 @@
         padding-top:0px;
     }
     .main-heading {
-        font-size: 2rem;
+        font-size:30px;
     }
     .sub-heading {
-        font-size: 1.5rem;
+        font-size:30px;
     }
     .cards {
         flex-wrap: wrap; /* Allow cards to wrap */
@@ -598,10 +600,10 @@
         padding-top:0px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size:30px;
     }
     .sub-heading {
-        font-size: 1.8rem;
+        font-size:30px;
     }
     .description {
         font-size: 1rem;
@@ -620,10 +622,10 @@
     }
     .main-heading {
         padding:0px;
-        font-size: 1.6rem;
+        font-size:30px;
     }
     .sub-heading {
-        font-size: 1.6rem;
+        font-size: 30px;
     }
     .description {
         font-size: 0.95rem;
@@ -783,7 +785,7 @@
 }
 
 .section-3 .right-side p {
-    font-size: 1.2rem;
+    font-size: 18px;
     color: #333;
     line-height: 1.5;
     text-align: justify;
