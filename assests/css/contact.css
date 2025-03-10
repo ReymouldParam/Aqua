@@ -210,7 +210,7 @@
 
 /* Support Titles */
 .support-title {
-    font-size: 2rem;
+    font-size: 30px;
     color:#3896E1;
     font-weight: 600;
     margin:0px !important;
@@ -218,7 +218,7 @@
 
 /* Support Info (Phone Number & Email) */
 .support-info {
-    font-size: 1.3rem;
+    font-size:18px;
     color: black;
     font-family: poppins;
     margin:0px !important;
@@ -228,7 +228,7 @@
 .btn.call {
     margin-top: 15px;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 18px;
     border: 1px solid var(--std-color);
     background: white;
     border-radius: 10px;
@@ -292,17 +292,24 @@
     }
         /* Support Info (Phone Number & Email) */
         .support-info {
-            font-size:1rem;
+            font-size:18px;
             color: black;
             font-family: poppins;
         }
 }
 @media (max-width: 1024px) {
     .contact-sub {
-        gap: 30px;
+        display: flex;
+        flex-wrap: nowrap; /* Allows wrapping on smaller screens */
+        gap: 10px;
     }
     .contact-card {
         max-width: 400px !important; /* Slightly reduce max width */
+    }
+    .support-info {
+        font-size:16px;
+        color: black;
+        font-family: poppins;
     }
 }
 @media (max-width:992px){
@@ -325,7 +332,7 @@
     
     /* Support Info (Phone Number & Email) */
     .support-info {
-        font-size: 0.75rem;
+        font-size:14px;
         color: black;
         font-family: poppins;
     }
@@ -350,6 +357,9 @@
         max-width: 250px;
         animation: none;
     }
+    .support-info {
+        font-size:14px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -358,6 +368,9 @@
     }
     .contact-card {
         max-width: 90%;
+    }
+    .support-info {
+        font-size:14px;
     }
 }
 /*contact sec3*/
@@ -410,7 +423,7 @@
 .send {
     width: 150px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     border: 2px solid var(--std-color);
     background: transparent;
     cursor: pointer;
@@ -425,12 +438,12 @@
 }
 
 .message-title {
-    font-size:2.5rem;
+    font-size:30px;
     font-weight: bold;
 }
 
 .message-subtitle {
-    font-size: 1rem;
+    font-size:18px;
     font-weight: 600;
 }
 
@@ -455,7 +468,7 @@ iframe {
         font-size: 16px;
     }
     .message-title {
-        font-size: 2.3rem;
+        font-size:30px;
     }
     iframe {
         border: none;
@@ -475,16 +488,20 @@ iframe {
         width: 90%;
     }
     .sec3-left .form-title {
-        font-size: 15px;
+        font-size: 16px;
     }
     .message-title {
-        font-size: 2rem;
+        font-size:30px;
     }
     
     iframe {
        border: none;
        width:100%;
        border-radius: 25px;
+    }
+    .message-subtitle {
+        font-size:16px;
+        font-weight: 600;
     }
 }
 

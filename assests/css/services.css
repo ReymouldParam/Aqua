@@ -64,7 +64,7 @@
         }
 
         .sec1-right p {
-            font-size:1.1rem;
+            font-size:18px;
             color: #555;
             line-height: 1.6;
             text-align: justify;
@@ -93,6 +93,11 @@
         }
 
 /* Responsive Design */
+@media (min-width:1550px){
+    .sec1-right p {
+        font-size:20px;
+    }
+}
 @media (max-width: 1400px) {
     .sec1-left h1 {
         font-size: 4rem;
@@ -117,7 +122,7 @@
     }
     
     .sec1-right p {
-        font-size:1rem;
+        font-size:16px;
         text-align:justify;
     }
 }
@@ -150,7 +155,7 @@
     }
 
     .sec1-right p {
-        font-size: 1rem;
+        font-size: 16px;
         text-align:justify;
     }
 }
@@ -174,7 +179,7 @@
     }
 
     .sec1-right p {
-        font-size: 0.9rem;
+        font-size:14px;
     }
 }
 @media (max-width: 768px) {
@@ -197,7 +202,7 @@
     }
 
     .sec1-right p {
-        font-size: 0.9rem;
+        font-size:14px;
     }
 }
 
@@ -215,7 +220,7 @@
     }
 
     .sec1-right p {
-        font-size: 0.85rem;
+        font-size: 14px;
         line-height: 1.5;
     }
 }
@@ -228,7 +233,7 @@
 }
 
 .service-sec2 .heading-text {
-    font-size:3rem;
+    font-size:30px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
@@ -263,14 +268,14 @@
 }
 
 .service-sec2 .card1 h1 {
-    font-size:1.5rem;
+    font-size:18px;
     margin-bottom: 10px;
     text-align: left;
     font-weight:600;
 }
 
 .card1 p {
-    font-size: 1.1rem;
+    font-size:16px;
     color: #333;
     line-height: 1.5;
     text-align: left;
@@ -317,9 +322,14 @@
     }
 }
 /* Responsive Design */
+@media (min-width:1550px){
+    .service-sec2 .card1 h1 {
+        font-size:20px;
+    }
+}
 @media (max-width: 1400px) {
     .service-sec2 .heading-text {
-        font-size: 2.8rem;
+        font-size:30px;
     }
 
     .card1 {
@@ -329,7 +339,7 @@
 
 @media (max-width: 1200px) {
     .service-sec2 .heading-text {
-        font-size: 2.5rem;
+        font-size:30px;
     }
 
     .card1 {
@@ -347,7 +357,7 @@
     }
 
     .service-sec2 .heading-text {
-        font-size: 2.2rem;
+        font-size:30px;
     }
 
     .service-cards {
@@ -360,16 +370,16 @@
     }
 
     .card1 h1 {
-        font-size: 1.3rem;
+        font-size:18px;
     }
 
     .card1 p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 @media (max-width:992px){
     .service-sec2 .heading-text {
-        font-size: 2rem;
+        font-size:20px;
     }
 
     .service-cards {
@@ -389,17 +399,17 @@
     }
 
     .card1 h1 {
-        font-size: 1.2rem;
+        font-size: 18px;
     }
 
     .card1 p {
-        font-size: 0.95rem;
+        font-size:16px;
     }
 } 
 
 @media (max-width: 768px) {
     .service-sec2 .heading-text {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .service-cards {
@@ -418,11 +428,11 @@
     }
 
     .card1 h1 {
-        font-size: 1.2rem;
+        font-size:18px;
     }
 
     .card1 p {
-        font-size: 0.95rem;
+        font-size:16px;
     }
 }
 
@@ -431,7 +441,7 @@
         padding: 0px;
     }
     .service-sec2 .heading-text {
-        font-size: 1.8rem;
+        font-size: 20px;
     }
 
     .card1 {
@@ -439,11 +449,11 @@
     }
 
     .card1 h1 {
-        font-size: 1.1rem;
+        font-size:18px;
     }
 
     .card1 p {
-        font-size: 0.9rem;
+        font-size:16px;
         text-align: justify;
     }
 
@@ -459,7 +469,7 @@
     padding:15px;
 }
 .service-sec3 h1{
-    font-size: 2rem;
+    font-size:30px;
     font-weight: bold;
     text-align: center;
 }
@@ -508,7 +518,7 @@
 }
 
 .service-sec3 p {
-    font-size:1.1rem;
+    font-size:18px;
     text-align: center;
     padding-bottom:70px;
 }
@@ -554,7 +564,7 @@
         padding-bottom:40px;
     }
     .service-sec3 h1 {
-        font-size: 1.8rem;
+        font-size:30px;
     }
 
     .glasses-section {
@@ -576,7 +586,7 @@
         padding-bottom:40px;
     }
     .service-sec3 h1 {
-        font-size: 1.7rem;
+        font-size:30px;
     }
 
     .glasses-section {
@@ -597,7 +607,7 @@
     }
 
     .service-sec3 p {
-        font-size: 1rem;
+        font-size:18px;
         padding:0px;
     }
     .flow-image img{
@@ -629,13 +639,17 @@
     .bubbles-row {
         gap: 15px;
     }
+    .service-sec3 p {
+        font-size:16px;
+        padding:0px;
+    }
 }
 @media (max-width: 992px) {
     .service-sec3{
         padding-bottom:50px;
     }
     .service-sec3 h1 {
-        font-size: 1.6rem;
+        font-size:20px;
         padding-bottom:20px;
     }
 
@@ -664,7 +678,7 @@
     }
 
     .service-sec3 p {
-        font-size: 0.95rem;
+        font-size:14px;
         padding-bottom:50px;
     }
     .flow-image img {
@@ -674,7 +688,7 @@
 
 @media (max-width: 768px) {
     .service-sec3 h1 {
-        font-size: 1.6rem;
+        font-size:20px;
     }
 
     .glasses-section {
@@ -702,7 +716,7 @@
     }
 
     .service-sec3 p {
-        font-size: 0.95rem;
+        font-size:14px;
         padding-bottom:0px;
     }
     .flow-image img {
@@ -718,7 +732,7 @@
         padding-bottom:0px;
     }
     .service-sec3 h1 {
-        font-size: 1.5rem;
+        font-size:20px;
     }
 
     .left-glass,
@@ -739,7 +753,7 @@
     }
 
     .service-sec3 p {
-        font-size: 0.9rem;
+        font-size:14px;
         padding-bottom:0px;
     }
 }

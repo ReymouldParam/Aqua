@@ -97,6 +97,7 @@
 .explore-btn {
     background-color: white;
     border: 2px solid var(--std-color);
+    font-size:18px;
     padding: 8px 15px;
     border-radius: 10px;
     cursor: pointer;
@@ -268,6 +269,10 @@
     }
     .image-2{
         margin-left: -50px;
+    }
+    .right-section p {
+        font-size: 16px;
+        color: #333;
     }
   }
 
@@ -534,7 +539,7 @@
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size:18px;
     color: #333;
     text-align:center;
     white-space: normal;
@@ -563,7 +568,7 @@
         font-size: 30px;
     }
     .description {
-        font-size:18px;
+        font-size:16px;
         max-width: 90%;
     }
     .card {
@@ -571,10 +576,10 @@
         padding: 18px;
     }
     .card-title {
-        font-size: 1.1rem;
+        font-size:18px;
     }
     .card-text {
-        font-size: 0.95rem;
+        font-size:16px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -606,7 +611,7 @@
         font-size:30px;
     }
     .description {
-        font-size: 1rem;
+        font-size: 14px;
     }
     .cards {
         flex-wrap: wrap;
@@ -628,7 +633,7 @@
         font-size: 30px;
     }
     .description {
-        font-size: 0.95rem;
+        font-size:14px;
     }
     .cards {
         flex-direction: column; /* Stack cards vertically */
@@ -650,7 +655,7 @@
         font-size: 1.5rem;
     }
     .description {
-        font-size: 0.9rem;
+        font-size:14px;
     }
     .cards {
         flex-direction: column;
@@ -779,7 +784,7 @@
 }
 
 .choose-heading {
-    font-size: 2rem;
+    font-size:30px;
     font-weight: bold;
     color: #000;
 }
@@ -813,10 +818,10 @@
         height: 80px;
     }
     .choose-heading {
-        font-size: 1.8rem;
+        font-size:30px;
     }
     .section-3 .right-side p {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .hex6 { 
         bottom: 5%;
@@ -850,10 +855,10 @@
         height: 65px;
     }
     .choose-heading {
-        font-size: 1.7rem;
+        font-size:30px;
     }
     .section-3 .right-side p {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .hex6 { 
         bottom: 0%;
@@ -893,10 +898,10 @@
         height: 70px;
     }
     .choose-heading {
-        font-size: 1.6rem;
+        font-size:30px;
     }
     .section-3 .right-side p {
-        font-size: 1rem;
+        font-size: 16px;
         text-align: start;
     }
     .hexagon img {
@@ -936,10 +941,10 @@
         height: 65px;
     }
     .choose-heading {
-        font-size: 1.5rem;
+        font-size: 20px;
     }
     .section-3 .right-side p {
-        font-size: 0.95rem;
+        font-size:14px;
     }
     .purifier-img {
         width: 200px;
@@ -984,7 +989,7 @@
         width: 100%; /* Ensure text takes full width */
     }
     .section-3 .right-side p {
-        font-size: 0.9rem;
+        font-size:14px;
         text-align: center;
     }
     .purifier-img {
@@ -1025,7 +1030,7 @@
         font-size: 1.3rem;
     }
     .section-3 .right-side p {
-        font-size: 0.85rem;
+        font-size:14px;
     }
     .purifier-img {
         width: 200px;

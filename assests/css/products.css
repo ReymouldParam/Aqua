@@ -35,14 +35,14 @@
 
 .certified-text {
     color: skyblue;
-    font-size: 1rem;
+    font-size:18px !important;
     font-weight: bold;
     margin: 0;
 }
 
 .iso-text {
     color: var(--std-color);
-    font-size: 0.75rem;
+    font-size:16px !important;
     font-weight: 600;
     margin: 0;
 }
@@ -86,6 +86,15 @@
 }
 
 /* Responsive design */
+@media (min-width:1550px){
+    .certified-text {
+        font-size:20px !important;
+    }
+    
+    .iso-text {
+        font-size:18px !important;
+    }
+}
 @media (max-width: 1400px) {
     .products-heading {
         font-size: 4.5rem;
@@ -101,6 +110,13 @@
     }
     .subsec-1 {
         gap: 60px;
+    }
+    .certified-text {
+        font-size:16px !important;
+    }
+    
+    .iso-text {
+        font-size:14px !important;
     }
 }
 
@@ -130,6 +146,13 @@
     }
     .right-des {
         margin-left: 0;
+    }
+    .certified-text {
+        font-size:14px !important;
+    }
+    
+    .iso-text {
+        font-size:12px !important;
     }
 }
 
@@ -184,6 +207,11 @@
     color: var(--std-color); /* Slightly darker blue on hover */
 }
 /*responsive*/
+@media (min-width:1550px){
+    .subsec-2 a {
+        font-size: 20px;
+    }
+}
 @media (max-width: 1400px) {
     .products-heading {
         font-size: 4.5rem;
@@ -473,7 +501,7 @@
         font-size: 16px;
     }
     .description {
-        font-size: 15px;
+        font-size: 16px;
     }
     .right-features {
         gap: 20px;
@@ -509,7 +537,7 @@
         font-size: 15px;
     }
     .description {
-        font-size: 14px;
+        font-size: 16px;
     }
     .right-features {
         flex-wrap: wrap;
@@ -601,7 +629,7 @@
     }
 
     .description {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .pop-feature p {
@@ -722,7 +750,7 @@
 .know-more {
     margin-top: 10px;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 18px;
     color: black;
     background: transparent;
     border: 2px solid var(--std-color);
@@ -840,6 +868,30 @@
     font-weight: bold;
 }
 /*responsive*/
+@media (max-width:1400px){
+    .text-section h1 {
+        font-size: 30px;
+    }
+    
+    /* Filter details */
+    .text-section p {
+        font-size: 20px;
+    }
+}
+@media (max-width:1200px){
+    .text-section h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    /* Filter details */
+    .text-section p {
+        font-size: 20px;
+        color: #666;
+        margin-top: 5px;
+    }
+}
 @media (max-width: 1024px) {
     .banner-section {
         flex-direction: column;
@@ -891,7 +943,7 @@
         font-size: 20px;
     }
     .text-section p {
-        font-size: 10px;
+        font-size: 14px;
     }
     .features {
         flex-direction:row;
@@ -918,7 +970,7 @@
         font-size: 15px;
     }
     .text-section p {
-        font-size: 7px;
+        font-size: 14px;
     }
     .purifier {
         width: 80%;
