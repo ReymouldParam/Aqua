@@ -220,13 +220,13 @@ body{
   width:30%;
 }
 .section-1 p{
-  font-size:18px;
+  font-size:15px;
 }
 .section-2 p{
-  font-size:18px;
+  font-size:15px;
 }
 .section-3 p{
-  font-size:18px;
+  font-size:15px;
 }
 .footer{
   gap:0px;
@@ -287,14 +287,23 @@ body{
 .footer {
   text-align:center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size:15px;
 }
 
 
 /* Media Queries */
-@media (min-width:1550px){
+@media (min-width:1700px) and (max-width:2600px){
   .about-contact {
     font-size:20px;
+  }
+  .section-1 p{
+    font-size:15px;
+  }
+  .section-2 p{
+    font-size:15px;
+  }
+  .section-3 p{
+    font-size:15px;
   }
 }
 @media (max-width: 1400px) {

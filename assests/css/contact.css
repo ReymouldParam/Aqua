@@ -189,7 +189,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
+    width:1200px;
+    margin:auto;
 }
 
 .contact-card {
@@ -220,7 +221,7 @@
 .support-info {
     font-size:18px;
     color: black;
-    font-family: poppins;
+    font-family:inter;
     margin:0px !important;
 }
 
@@ -264,6 +265,17 @@
     }
 }
 /* Responsive Styles */
+@media (min-width:1700px) and (max-width:2600px){
+    .contact-sub {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: nowrap; /* Allows wrapping on smaller screens */
+        gap: 10px;
+    }
+    .support-info {
+        font-size:20px;
+    }
+}
 @media (max-width:1400px){
     .contact-sub {
         gap: 10px;
@@ -302,6 +314,7 @@
         display: flex;
         flex-wrap: nowrap; /* Allows wrapping on smaller screens */
         gap: 10px;
+        max-width:100%;
     }
     .contact-card {
         max-width: 400px !important; /* Slightly reduce max width */
@@ -459,6 +472,15 @@ iframe {
 }
 /*responsive */
 /* Responsive adjustments */
+@media (min-width:1700px) and (max-width:2600px){
+    .contactsub3 {
+        max-width:100%;
+        margin:auto;
+    }
+    .message-subtitle {
+        font-size:20px;
+    }
+}
 @media (max-width: 1400px) {
     .contactsub3 {
         max-width: 1100px;
@@ -653,6 +675,19 @@ iframe {
     height: auto;
 }
 /* Responsive Design */
+@media (min-width:1700px) and (max-width:2600px){
+    .contactsub4 {
+        max-width:90%;
+        margin: auto;
+    }
+    .sec4left,
+.sec4right {
+    width: 25%;
+    height: 150%; /* Make images taller */
+    object-fit: cover; /* Ensure they don't get distorted */
+    transition: all 1s ease-in-out;
+}
+}
 @media (max-width: 1400px) {
     .contactsub4 {
         flex-direction: row;

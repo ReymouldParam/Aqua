@@ -161,6 +161,18 @@
 }
 /*responsive*/
 /*larger screens*/
+@media (min-width:1700px) and (max-width:2600px){
+    .right-section p {
+        font-size: 20px;
+    }
+    .outer-container{
+        max-width:100%;
+        margin:auto;
+    }
+    .right-section {
+        max-width: 650px !important;
+    }
+}
 @media (min-width: 1400px) {
     .outer-container {
         flex-direction: row; /* Ensure row layout */
@@ -304,7 +316,7 @@
         top: 100px;
     }
     .right-section {
-        max-width: 40%;
+        max-width: 45%;
         text-align:flex-start;
     }
     .right-section p {
@@ -342,6 +354,9 @@
             justify-content:center;
             align-items:flex-start;
             margin-left:-50px;
+        }
+        .left-section {
+          width:50%;
         }
         .heading {
             font-size: 2.5rem;
@@ -392,6 +407,9 @@
         align-items: center;
         margin-left:-50px;
     }
+    .left-section {
+        width:50%;
+      }
     .image-1, .image-2 {
         width:100%;
         height:auto;
@@ -402,7 +420,7 @@
     }
     .image-1{
         margin-right:50px;
-        margin-top:30px;
+        margin-top:10px;
     }
     .right-section {
         max-width: 100%; /* Make text take full width */
@@ -447,7 +465,7 @@
     }
     .image-1{
         margin-right:50px;
-        margin-top:30px;
+        margin-top:10px;
     }
     .right-section {
 
@@ -546,6 +564,17 @@
     line-height: 1.5;
 }
 /*responsive*/
+@media (min-width:1700px) and (max-width:2600px){
+    .description {
+        font-size: 20px;
+    }
+    .card {
+        width: 400px;
+    }
+    .card-text{
+        font-size:20px;
+    }
+}
 @media screen and (max-width: 1400px) {
     .description {
         max-width: 85%;
@@ -801,6 +830,11 @@
     font-weight: bold;
 }
 /*responsive*/
+@media (min-width:1700px) and (max-width:2600px){
+    .section-3 .right-side p{
+        font-size:20px;
+    }
+}
 @media screen and (max-width: 1400px) {
     .section-3 {
         gap: 40px;
@@ -993,7 +1027,7 @@
         text-align: center;
     }
     .purifier-img {
-        width: 200px;
+        width: 140px;
         height: auto;
         transition: transform 0.5s ease;
     }
@@ -1033,7 +1067,7 @@
         font-size:14px;
     }
     .purifier-img {
-        width: 200px;
+        width: 140px;
         height: auto;
         transition: transform 0.5s ease;
     }
