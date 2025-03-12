@@ -267,6 +267,7 @@ body{
   border: 1px solid white;
   border-radius: 15px !important;
   font-size: 18px;
+  transition: all 0.5s ease-in-out;
 }
 .contact-form button:hover {
   background-color: var(--std-color);
@@ -304,6 +305,10 @@ body{
   }
   .section-3 p{
     font-size:15px;
+  }
+  .about-contact-section{
+    padding-top:30px;
+    padding-bottom:10px;
   }
 }
 @media (max-width: 1400px) {
@@ -645,14 +650,13 @@ body{
   margin-top: 10px;
   width: auto;
   /* Adjust width for better fit */
-  height: auto;
+  height:auto;
   font-family: "Raleway Bold";
   font-size: 10px;
   /* Adjust font size for better fit */
   background-color: #1E1B25;
   color: #FFFFFF;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;

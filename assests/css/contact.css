@@ -189,7 +189,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width:1200px;
+    max-width: 100%;
     margin:auto;
 }
 
@@ -234,7 +234,7 @@
     background: white;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn.call:hover {
@@ -279,6 +279,7 @@
 @media (max-width:1400px){
     .contact-sub {
         gap: 10px;
+        max-width: 100%;
     }
     .contact-card {
         max-width: 300px !important; /* Slightly reduce max width */
@@ -433,6 +434,7 @@
 }
 .sec3-left .form-control:focus{
     outline:none;
+    box-shadow: none;
 }
 
 .send {
@@ -443,7 +445,7 @@
     background: transparent;
     cursor: pointer;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .send:hover {
