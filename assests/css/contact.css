@@ -290,9 +290,11 @@
 @media (max-width:1200px){
     .contact-sub {
         gap: 10px;
+        max-width:100%;
+        flex-wrap:nowrap;
     }
     .contact-card {
-        max-width: 250px !important; /* Slightly reduce max width */
+        max-width: 200px !important; /* Slightly reduce max width */
     }
     .purifier {
         max-width: 240px;

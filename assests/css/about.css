@@ -181,18 +181,18 @@
         gap:11px;
     }
     .about-row, .us-row {
-        gap: 100px;
+        gap: 80px;
         flex-direction: row;
     }
     .about-row{
-        gap:170px;
+        gap:130px;
         flex-direction: row;
     }
     .right-section {
         max-width: 400px;
     }
     .image-1, .image-2 {
-        width: 300px;
+        width: 250px;
         height: 330px;
     }
     .right-section {
@@ -270,7 +270,7 @@
       flex-direction: row;
     }
     .right-section {
-      max-width: 50%;
+      max-width: 42%;
       box-sizing: border-box;
       padding: 10px;
     }
@@ -375,12 +375,14 @@
             margin-top:30px;
         }
         .right-section {
-            max-width: 80%; /* Make text take more space */
+            max-width: 100%; /* Make text take more space */
             text-align: center;
             padding-top:50px;
+            align-items:center;
         }
         .right-section p {
            font-size: 0.95rem;
+           text-align: justify;
         }
         .about-row h1, .us-row h1 {
             font-size: 2.5rem; /* Reduce heading size */
@@ -641,6 +643,7 @@
     }
     .description {
         font-size: 14px;
+        text-align:justify;
     }
     .cards {
         flex-wrap: wrap;
@@ -977,8 +980,13 @@
     .choose-heading {
         font-size: 20px;
     }
+    .right-side {
+        max-width: 100%;
+        text-align: center;
+    }
     .section-3 .right-side p {
         font-size:14px;
+        text-align: justify;
     }
     .purifier-img {
         width: 200px;
@@ -1025,6 +1033,7 @@
     .section-3 .right-side p {
         font-size:14px;
         text-align: center;
+        text-align: justify;
     }
     .purifier-img {
         width: 140px;
@@ -1065,6 +1074,7 @@
     }
     .section-3 .right-side p {
         font-size:14px;
+        text-align: justify;
     }
     .purifier-img {
         width: 140px;

@@ -724,6 +724,7 @@
     .service-sec3 p {
         font-size:14px;
         padding-bottom:0px;
+        text-align: justify;
     }
     .flow-image img {
         display:block;
@@ -761,6 +762,7 @@
     .service-sec3 p {
         font-size:14px;
         padding-bottom:0px;
+        text-align: justify;
     }
 }
 
