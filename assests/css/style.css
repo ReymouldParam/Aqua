@@ -274,7 +274,7 @@
   }
 
   .main-landing-section .content-container .right-container .filter-part-images-carousel{
-    width: 170px;
+    width: 220px;
   }
   .main-landing-section .content-container .filter-images-carousel .item{
     height: 310px;
@@ -1112,10 +1112,13 @@
  }
  
 .card h3 {
-  font-size:16px;
+  font-size:14px;
   /*font-weight: bold;*/
   color: black;
   margin: 15px 0 10px;
+}
+.card p{
+  font-size:14px;
 }
 }
 @media (max-width:992px){
@@ -1405,6 +1408,22 @@
 .features {
   font-size: 20px;
 }
+}
+@media (max-width:1400px){
+  .overlay-text p {
+    font-size:18px;
+  }
+  .features {
+    font-size: 18px;
+  }
+}
+@media (max-width:1200px){
+  .overlay-text p {
+    font-size:16px;
+  }
+  .features {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1024px) {
   .overlay-text p{

@@ -576,7 +576,10 @@
     .glasses-section {
         gap: 25px;
     }
-
+    .service-sec3 p {
+        font-size:16px;
+        padding-bottom:20px;
+    }
     .left-glass,
     .right-glass {
         max-width: 200px;
@@ -601,7 +604,7 @@
 
     .left-glass,
     .right-glass {
-        max-width: 180px;
+        max-width: 160px;
     }
 
     .bubble-icon {
@@ -613,8 +616,8 @@
     }
 
     .service-sec3 p {
-        font-size:18px;
-        padding:0px;
+        font-size:16px;
+        padding-bottom:0px;
     }
     .flow-image img{
         width:100%;

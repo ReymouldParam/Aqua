@@ -687,7 +687,7 @@ iframe {
     .sec4left,
 .sec4right {
     width: 25%;
-    height: 150%; /* Make images taller */
+    height: 100%; /* Make images taller */
     object-fit: cover; /* Ensure they don't get distorted */
     transition: all 1s ease-in-out;
 }
