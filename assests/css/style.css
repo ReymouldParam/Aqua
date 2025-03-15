@@ -586,6 +586,7 @@
     color: #333;
     text-align: center !important;
     font-size:30px;
+    padding-bottom:0px;
   }
   .about p {
     line-height: 1.5;
@@ -612,6 +613,7 @@
     color: #333;
     text-align: center !important;
     font-size:30px;
+    padding-bottom:0px;
   }
   .about p {
     line-height: 1.5;

@@ -617,6 +617,9 @@
     .pop-up-container {
         flex-direction:column;
         padding: 20px;
+        width:100%;
+        padding:10px;
+        
     }
     .popup-title {
         font-size: 28px;
@@ -645,8 +648,8 @@
 
 @media (max-width: 576px) {
     .pop-up-container {
-        width: 90%;
-        padding: 15px;
+        width: 100%;
+        padding: 10px;
     }
 
     .popup-title {
