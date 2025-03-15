@@ -192,7 +192,7 @@ body{
 
 /* About & Contact Section */
 .about-contact {
-  background: linear-gradient(rgba(98, 117, 149, 1), rgba(84, 107, 129, 0.5)), url('/assests/images/footer.jpeg');
+  background: linear-gradient(rgba(98, 117, 149, 1), rgba(84, 107, 129, 0.5)), url('/assests/images/footer.webp');
   background-repeat: no-repeat;
   background-position: top;
   width:100%;

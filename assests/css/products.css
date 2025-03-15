@@ -175,23 +175,33 @@
 /*styles for subsec-2*/
 .subsec-2 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content:space-between; /* Align items to the start */
     align-items: center;
     background-color: white;
-    padding: 30px 40px;
-    border-radius: 15px 15px 0 0; /* Rounded top corners only */
+    padding: 15px 20px; /* Adjusted padding for compact layout */
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Needed for bottom line */
+    position: relative;
+    gap: 20px; /* Spacing between items */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    scrollbar-width: thin; /* Firefox: Thin scrollbar */
+    scrollbar-color: #ccc transparent; /* Firefox: Custom scrollbar color */
 }
 
-.subsec-2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px; /* Thickness of the bottom line */
-    background-color: #ccc; /* Light gray color for bottom line */
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+.subsec-2::-webkit-scrollbar {
+    height: 5px; /* Makes scrollbar thin */
+}
+
+.subsec-2::-webkit-scrollbar-thumb {
+    background: #aaa; /* Scroll thumb color */
+    border-radius: 10px;
+}
+
+.subsec-2::-webkit-scrollbar-track {
+    background: transparent; /* Hides track */
 }
 
 .subsec-2 a {
@@ -200,18 +210,32 @@
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
-    padding-bottom: 5px; /* Ensures spacing above the bottom line */
+    padding: 5px 0;
+}
+
+/* Adding "|" separator between links except the last one */
+.subsec-2 a:not(:last-child)::after {
+    content: " | ";
+    color: gray;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
 }
 
 .subsec-2 a.active-link {
-    color:var(--std-color); /* Blue color for the active link */
+    color: var(--std-color); /* Blue color for the active link */
 }
 
 .subsec-2 a:hover {
     color: var(--std-color); /* Slightly darker blue on hover */
 }
+
 /*responsive*/
 @media (min-width:1700px) and (max-width:2600px){
+    .subsec-2 {
+        display:flex;
+        justify-content: center;
+    }
     .subsec-2 a {
         font-size: 20px;
     }
@@ -234,6 +258,9 @@
     }
     .subsec-2 {
         padding: 25px;
+    }
+    .subsec-2 a {
+        font-size: 16px;
     }
 }
 
@@ -780,7 +807,7 @@
 }
 /*productssection-2*/
 .products-section2 {
-    background:radial-gradient(#FFFFFF,#D3DEF0),url('/assests/images/Group.png'); /* Light blue background */
+    background:radial-gradient(#FFFFFF,#D3DEF0),url('/assests/images/Group.webp'); /* Light blue background */
     background-blend-mode: overlay;
     padding: 40px;
     display: flex;

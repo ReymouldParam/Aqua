@@ -587,7 +587,7 @@
         gap: 15px;
     }
     .card {
-        width: 280px;
+        width: 320px;
     }
 }
 
@@ -601,10 +601,10 @@
     }
     .description {
         font-size:16px;
-        max-width: 90%;
+        max-width: 100%;
     }
     .card {
-        width: 280px;
+        width: 300px !important;
         padding: 18px;
     }
     .card-title {
@@ -721,7 +721,7 @@
 .image-container {
     width: 600px;
     height: 500px;
-    background-image: url("/assests/images/section3-left-bg.png");
+    background-image: url("/assests/images/section3-left-bg.webp");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -795,7 +795,7 @@
 
 /* Hexagon Text (Positioned Below) */
 .hex-group p {
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     margin-top: 5px;
@@ -838,6 +838,9 @@
     .Aboutsection-3 .right-side p{
         font-size:20px;
     }
+    .hex-group p {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 1400px) {
     .Aboutsection-3 {
@@ -849,7 +852,7 @@
         height: 450px;
     }
     .purifier-img {
-        width: 280px;
+        width: 250px;
     }
     .hexagon {
         width: 70px;
@@ -882,11 +885,11 @@
         padding: 30px;
     }
     .image-container {
-        width: 500px;
+        width: 450px;
         height: 400px;
     }
     .purifier-img {
-        width: 260px;
+        width: 180px;
     }
     .hexagon {
         width: 65px;
@@ -907,10 +910,7 @@
         right: 5%;
     };
     .hex-group p {
-        font-size: 0.5rem !important;
-        font-weight: bold;
-        color: white;
-        margin-top: 5px;
+        font-size:12px !important;
     }
 }
 @media screen and (max-width: 1024px) {
