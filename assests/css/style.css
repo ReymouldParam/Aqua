@@ -265,7 +265,7 @@
   }
 }
 /*laptop screens*/
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
   .main-landing-section .purifier-container .purifier-text .main-text{
     font-size: 8rem;
   }
