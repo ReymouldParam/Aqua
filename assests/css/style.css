@@ -275,7 +275,7 @@
 /*extra-large screens*/
 @media (min-width:1700px) and (max-width:2600px) {
     .main-landing-section .purifier-container .purifier-text .main-text {
-        font-size: 15rem;
+        font-size: 170px;
     }
 
     .main-landing-section .purifier-container .under-text {
@@ -302,7 +302,7 @@
 /*laptop screens*/
 @media screen and (max-width: 1400px) {
     .main-landing-section .purifier-container .purifier-text .main-text {
-        font-size: 8rem;
+        font-size: 110px;
     }
 
     .main-landing-section .content-container .filter-images-carousel {

@@ -931,6 +931,7 @@
     width: 400px;
     height: auto;
     object-fit: contain;
+    border-radius: 15px;
 }
 
 /* Right-side text section */
