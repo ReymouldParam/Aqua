@@ -5,12 +5,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "reymould.social@gmail.com";
+    $to = "tirupatiaquatech@yahoo.com";
     $subject = "Enquiry from aquasite  website";
     $body = "Name: $name\nEmail: $email\nNumber: $number\nMessage: $message";
 
     // Send email to both recipients
-    mail("pravallika.pentakota@reymould.com", $subject, $body);
+    mail("sales@tirupatiaquatech.in", $subject, $body);
 
     if (mail($to, $subject, $body)) {
         header("Location: contact.html?emailSuccess=true");
