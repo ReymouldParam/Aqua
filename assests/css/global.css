@@ -29,7 +29,7 @@ body {
 .navbar {
     background-image: linear-gradient(#90D7FE, #BAE6FF);
     box-shadow: 5px 5px 10px #90D7FE;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 @media screen and (min-width:1500px) {
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-brand .navbar-logo {
-    height: 55px;
+    height: 45px;
     width: auto;
     object-fit: fill;
 }
