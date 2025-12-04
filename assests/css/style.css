@@ -364,6 +364,8 @@
 
     .main-landing-section .content-container .left-container .know-more-card {
         animation: none;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .main-landing-section .content-container .right-container .filter-part-images-carousel {
